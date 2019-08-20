@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    color: #333;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+    font-family: fut;
+    src: url(../assets/futuraMediumBT.ttf);
+}
+@font-face {
+    font-family: wayward;
+    src: url(../assets/WaywardSans-Regular.otf);
+}
+
+:root {
+    --text-logo: 28px;
+    --text-email: 19px;
+    --text-banner: 46px;
+    --color-bars :  #095BFF;
+    --gap-1: 50px;
+    --gap-2: 30px; 
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display : grid;
+    grid-template-columns: var(--gap-1) var(--gap-2) 1fr var(--gap-2) var(--gap-1);
+    grid-template-rows: var(--gap-1) 1fr 4fr 1fr var(--gap-2) var(--gap-1);
+}
+
+
+
+.banner {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: center;
+    font-size: var(--text-banner);
+    font-family: fut;
+    color: #222;
+    width:440px;
+    white-space: nowrap;
+    margin-left: -10vw;
+}
+em {
+    color: white;
+    padding: 4px;
+    font-style: normal;
+    overflow: hidden;
+}
+.background {
+    grid-column: 2/4;
+    grid-row: 2/5;
+    justify-self: center;
+    align-self: center;
+    /*transform: scale(0.7);*/
+    height: 95%;
+    width: auto;
+    position: fixed;
+    z-index: 0;
+}
+aside {
+    font-size: 15px;
+    white-space: nowrap;
+}
+aside::before {
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 1px;
+    background: var(--color-bars);
+}
+.left-aside{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: fut;
+    text-align: center;
+}
+.right-aside {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    writing-mode: vertical-rl;
+    font-family: fut;
+    text-align: center;
+}
+.footer {
+    grid-column: 2/5;
+    grid-row: 5/6;
+    justify-self: right;
+    align-items: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+.footer > nav {
+    width: 340px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10pt;
+    font-family: fut;
+
+}
+
+.footer > nav > a
+{
+     color: #636262;
+}
+.title-mob
+    {
+        display: none;
+    }
+
+.title-desktop
+{
+    display: block;
+}
+
+
+
+/****************newly added**************/
+.roorners1
+ {
+    border-radius:50px;
+    background:#42f587;
+    padding:5px 20px;
+    margin-top: 10px;   
+ }
+
+.grid-container {
+  display: grid;
+  position: absolute;
+  margin-top: 10%;
+  grid-template-columns: auto auto;
+  width: 100%;
+  justify-content: center;
+  z-index: -1;
+}
+
