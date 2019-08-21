@@ -1,0 +1,262 @@
+/**************burger menu ********************/
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+    font-family: fut;
+    src: url(../assets/futuraMediumBT.ttf);
+}
+@font-face {
+    font-family: wayward;
+    src: url(../assets/WaywardSans-Regular.otf);
+}
+
+*
+{
+  margin:0;
+}
+
+a {
+  color: #000;
+}
+
+
+.headers {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  margin-top: 25px;
+}
+
+.headers ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden; 
+  font-family:fut;
+}
+
+.headers li a {
+  display: block;
+  padding: 5px 20px;
+  /*border-right: 1px solid #f4f4f4;*/
+  text-decoration: none;
+  color: #9E9E9E;
+  font-size: 12pt;
+}
+
+.headers li a:hover,
+.headers .menu-btn:hover {
+  color: black;
+}
+
+.headers .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 12px 20px;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+/* menu */
+
+.headers .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.headers .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 25px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.headers .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.headers .menu-icon .navicon:before,
+.headers .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.headers .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.headers .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.headers .menu-btn {
+  display: none;
+}
+
+.headers .menu-btn:checked ~ .menu {
+  max-height: 400px;
+}
+
+
+
+
+.headers .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.headers .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.headers .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.headers .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.headers .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .headers li {
+    float: left;
+  }
+  .headers ul {
+     margin-right: 40px;
+  }
+
+  .headers .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .headers .menu-icon {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+.headers {
+    margin-top: 0px;
+    background-color: white;
+    padding-top: 5px;
+         }
+ .headers li a 
+ {
+  padding: 20px 15px;
+ }
+ .headers ul {
+    margin: 0% 5% 2% 2%;
+  }
+ .headers .logo
+  {
+    margin-left: 0px;
+  }
+
+}
+
+/*
+h2 {
+    font-family: wayward;
+    font-size: var(--text-logo);
+    font-weight: normal;
+} */
+
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19;
+    font-weight: bold;
+}
+
+.menu
+{
+  margin-top: 15px !important ;
+}
+
+.contact-button
+{
+  background-color: #06D876 !important;
+  border-radius: 50px;
+  color: white !important;
+  font-size: 10pt !important;
+}
+
+.menu
+{
+  font-family: 'fut';
+  font-weight: normal;
+}
+
+
+.logo {
+    font-family: wayward;
+    font-size: var(--text-logo);
+    font-weight: normal;
+    color: black;
+}
+
+.logo:hover {
+    color: black;
+}
+
+
+
+.bg-img
+{
+  background-image: url("../assets/bg.png");
+  height: 100%;
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: auto;
+  z-index: 0;
+}
+
+
+body,html
+{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width:768px) 
+{
+.contents
+{
+  padding: 15%;
+}
+.bg-img
+{
+  
+  background-position: center;
+}
+.reverse-row
+{
+  flex-direction: column-reverse; 
+}
+}
