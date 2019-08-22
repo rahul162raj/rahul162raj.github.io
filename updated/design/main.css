@@ -62,8 +62,6 @@ em {
     /*transform: scale(0.7);*/
     height: 95%;
     width: auto;
-    position: fixed;
-    z-index: 0;
 }
 aside {
     font-size: 15px;

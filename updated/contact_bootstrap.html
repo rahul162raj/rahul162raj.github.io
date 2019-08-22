@@ -8,7 +8,7 @@
 
     <title>Swevens - Augmented Reality & Virtual Reality company in Chennai,India</title>
 
-
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/resources/bootstrap.min.css"/>
     <script type="text/javascript" src="js/resources/popper.min.js"></script>
     <script type="text/javascript" src="js/resources/jquery.min.js"></script>
@@ -37,65 +37,87 @@
  <div class="container contents" style="z-index: -1;margin-top: 3vw;" >
   <div class="row">
      <div class="col-md-8"> 
-      <div class="row-12"> 
+      <div class="row"> 
         <h1>Lets build a<br>
         better world together.</h1>
       </div>
       <br>
       <br>
-      <div class="row"> 
+      <div class="row-12"> 
         <h6 style="opacity: .6;">CHOOSE SERVICES YOU WISH TO AVAIL</h6>
       </div>
       <br>
-      <div class="row"> 
-        <div class="col border-box">
-          <h4>AUGMENTED REALITY</h4>
-        </div>
-        <div class="col border-box">
+      <div class="row my-2"> 
+        <div class="col mx-1 border-box">
           <h5>AUGMENTED REALITY</h5>
         </div>
-        <div class="col border-box">
+        <div class="col mx-1 border-box">
+          <h5>AUGMENTED REALITY</h5>
+        </div>
+        <div class="col mx-1 border-box">
           <h5>AUGMENTED REALITY</h5>
         </div>
       </div>
       <br>
-      <div class="rows">
-        <div class="row">
-          <form class="form-group" method="post" action="mail-function.php" >
-            <input type="text" class="form-control form-control-md " placeholder="FULL NAME" id="usr" name="name">
-            <input type="email" class="form-control form-control-md " placeholder="EMAIL" id="usr" name="email">
-            <input type="number" class="form-control form-control-lg" placeholder="MOBILE" id="usr" name="phone">
-            <button type="submit" class="btn btn-success btn-block">SUBMIT</button> 
-          </form>
-        </div>
+      <div class="row">
+    
+          <div class="container my-4">
+		  <div class="row">
+		    <div class="col-md-6 mx-auto">
+		      <form class="form-group" method="post" action="mail-function.php">
+		        <input type="text" id="name" class="form-control border-change" required>
+		        <label class="form-control-placeholder" for="name">Name</label>
+		    </div>
+		    <div class="col-md-6 mx-auto">
+		      <div class="form-group">
+		        <input type="password" id="password" class="form-control border-change" required>
+		        <label class="form-control-placeholder" for="password">Password</label>
+		      </div>
+		    </div>
+		    <div class="col-md-12 my-5">
+		      <div class="form-group">
+		        <input type="text" id="email" class="form-control border-change" required>
+		        <label class="form-control-placeholder" for="email">Write your message here</label>
+		      </div>
+		    </div>
+		    <div class="col-2 ml-auto">
+		       <div class="btn-group btn-group-sm">
+  					<button type="button" class="btn btn-danger" style="padding: 10% 100%;border-radius: 20px;">Send</button>
+			   </div> 
+		    </div>
+		  </div>
+		</div>
+        </form>
+
       </div>
       </div>
     <div class="col-md-3 offset-1">
-      <h4>CONTACT US</h4>
-      <br>
-      <p>AR experiences can now be launched 
+      <h5>CONTACT US</h5>
+      <p class="my-3">AR experiences can now be launched 
         directly from Safari as part of a new 
         feature called AR Quick Look, 
       </p>
       <br>
       
-      <h4>OFFICE ADDRESS</h4>
-      <br>
-      <p>1st floor, Srimathi Apartment
-Thiruvanmiyur, Chennai
-India
+      <h5>OFFICE ADDRESS</h5>
+      <p class="my-3">1st floor, Srimathi Apartment
+		 Thiruvanmiyur, Chennai
+		 India
       </p>
       <br>
-      <h4>KEEP IN TOUCH</h4>
-      <br>
-      <p>Mail id <br>
+      <h5>KEEP IN TOUCH</h5>
+      <p class="my-4">Mail id <br>
         <b>contact@swevens.co</b>
       </p>
-      <br>
-      <p>Call <br>
+      <p class="my-4">Call <br>
         <b>+919444092103</b>
       </p>
       
+      <div style="display: flex;">
+      	<span class="ml-0"><a href="www.google.com"><i class="fa fa-facebook-square"></i></a></span>
+      	<span class="ml-3"><a href="www.google.com"><i class="fa fa-medium"></i></a></span>
+      	<span class="ml-3"><a href="www.google.com"><i class="fa fa-linkedin-square"></i></a></span>
+      </div>
     </div>
   </div>
 </div>
@@ -107,9 +129,59 @@ India
 
 
 <style type="text/css">
-  .border-box
+  .border-box:hover
   {
     border:solid 2px red;
-    margin:1%;
   }
+  .border-box
+  {
+    border:solid 2px darkgray;
+  }
+
+
+
+  /************newly addded********/
+
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 90%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+
+.border-change
+{
+	border: none;
+	border-bottom: solid 1px darkgray;
+	background-color: transparent !important;
+	border-radius: 0px;
+}
+
+.form-control:focus {
+  border: none;
+  border-bottom: solid 1px darkgray;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+
+.fa
+{
+	font-size: 18pt;
+}
 </style>
+
