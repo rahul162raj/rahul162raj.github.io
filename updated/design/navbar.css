@@ -13,7 +13,7 @@
 }
 @font-face {
     font-family: seui;
-    src: url(../assets/SEGOEUI.TTF);
+    src: url(../assets/Segoe UI.ttf);
 }
 
 *
@@ -27,7 +27,7 @@ a {
 
 body
 {
-   font-family: seui;
+   font-family:inherit;
 }
 .headers {
   position: fixed;
@@ -49,7 +49,7 @@ body
   padding: 5px 20px;
   /*border-right: 1px solid #f4f4f4;*/
   text-decoration: none;
-  color: #9E9E9E;
+  color: #8B8B8B;
   font-size: 12pt;
 }
 
@@ -210,6 +210,7 @@ h3 {
   border-radius: 50px;
   color: white !important;
   font-size: 10pt !important;
+/*  box-shadow: 0px 12px 21px -9px rgba(6,216,118,0.89);*/
 }
 
 .menu

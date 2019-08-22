@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 
     <link rel="stylesheet" type="text/css" href="css/resources/bootstrap.min.css"/>
     <script type="text/javascript" src="js/resources/popper.min.js"></script>
     <script type="text/javascript" src="js/resources/jquery.min.js"></script>
+
     <script type="text/javascript" src="js/resources/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 
     <script src="design/main.js"></script>
     <link rel="stylesheet" href="design/navbar.css">
@@ -90,24 +93,14 @@
       font-weight: bold;padding-top: 5px;font-family: fut
     }
 
-   /* @media screen and (max-width: 768px)
+    @media screen and (max-width: 767px)
 {
-
-    .slide-grid
-    {
-      display: block;
-      top:400px;
-    }
-    .c-bottom-center-heading
-    {
-      left:15%;
-    }
-    .c-page-no
-    {
-      left:15%;
-    }
+    .slick-slide img {
+    width: 65%;
+    height: 50vw;
+      }
 }
-
+/*
    @media screen and (max-width:1350px)
 {
 
@@ -213,10 +206,10 @@
   		<h2 class="c-bottom-heading"><span id="bottom-heading">IMERSIVE<br>EDUCATION</span></h2>
   	</div>
     
-    <div class="offset-md-1 col-md-2">
+    <div class="offset-md-1 col-md-3">
     	<h6 class="c-bottom-center-heading"> <span id="bottom-center-heading">Future of education is in AR Out of the box into the space</span> </h6>
     </div>
-    <div class="offset-md-2 col-md-1 ">
+    <div class="offset-md-1 col-md-1 ">
     	<h5 class="c-page-no"><span id="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/03</span></h5>
     </div>
     <div class="col-md-1" style="display: flex;padding-top:5px;padding-bottom:10px; ">
@@ -229,7 +222,8 @@
     </div> 
   </div>
 </div>
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript" src="js/resources/jquery-2.0.min.js"></script>
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script src="design/main.js"></script>
 
@@ -286,7 +280,7 @@
                   break;
           case 2:  $("#page-no").text("02");
                    $("#bottom-heading").html("AUGMENTED REALITY<br>MOTOR");
-                   $("#bottom-center-heading").html("AR experiences can now be launched directly from Safari as part of a new feature called AR Quick Look, allowing< instant access for shoppers to better understand products in 3D and Augmented Reality. The possibility to go from a web-page to an AR experience with a tap is completely new."); 
+                   $("#bottom-center-heading").html("AR experiences can now be launched directly from Safari as part of a new feature called AR Quick Look, allowing instant access for shoppers to better understand products in 3D and Augmented Reality. The possibility to go from a web-page to an AR experience with a tap is completely new."); 
                   break;
           case 3:  $("#page-no").text("03");
                    $("#bottom-heading").html("BRING HOME EVEN <br> BEFORE YOU BUY IT");

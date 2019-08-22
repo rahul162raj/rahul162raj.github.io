@@ -81,6 +81,7 @@ aside::before {
     transform: rotate(180deg);
     font-family: fut;
     text-align: center;
+    color: #AAA9A9;
 }
 .right-aside {
     grid-column: 4/5;
@@ -88,6 +89,7 @@ aside::before {
     writing-mode: vertical-rl;
     font-family: fut;
     text-align: center;
+    color: #AAA9A9;
 }
 .footer {
     grid-column: 2/5;
@@ -102,13 +104,12 @@ a {
 }
 
 .footer > nav {
-    width: 340px;
+    width: 100px;
     height: 40px;
     display: flex;
     justify-content: space-between;
-    font-size: 10pt;
-    font-family: fut;
-
+    font-size: 14pt;
+    opacity: .7;
 }
 
 .footer > nav > a

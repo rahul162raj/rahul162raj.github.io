@@ -73,11 +73,12 @@
         color: #666;
     }
     .footer > nav {
-        width: calc(100vw - 16px);
+        width: 120px;
         height: 40px;
         display: flex;
         justify-content: space-around;
         font-weight: normal;
+        
     }
 
     aside
