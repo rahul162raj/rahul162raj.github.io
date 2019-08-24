@@ -13,7 +13,12 @@
 }
 @font-face {
     font-family: seui;
-    src: url(../assets/Segoe UI.ttf);
+    src: url(../assets/SegoeUI.ttf);
+}
+
+@font-face {
+    font-family: seui-b;
+    src: url(../assets/SegoeUIBold.ttf);
 }
 
 *
@@ -28,12 +33,13 @@ a {
 body
 {
    font-family:inherit;
+   line-height: normal !important;
 }
 .headers {
   position: fixed;
   width: 100%;
   z-index: 3;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .headers ul {
@@ -61,8 +67,8 @@ body
 .headers .logo {
   display: block;
   float: left;
-  font-size: 2em;
-  padding: 12px 20px;
+  font-size: 1.8em;
+  padding: 12px 25px;
   text-decoration: none;
   margin-left: 30px;
 }
@@ -151,7 +157,7 @@ body
     float: left;
   }
   .headers ul {
-     margin-right: 40px;
+     margin-right: 50px;
   }
 
   .headers .menu {
@@ -196,12 +202,11 @@ h2 {
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 19;
-    font-weight: bold;
 }
 
 .menu
 {
-  margin-top: 15px !important ;
+  margin-top: 17px !important ;
 }
 
 .contact-button

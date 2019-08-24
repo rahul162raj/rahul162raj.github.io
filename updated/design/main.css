@@ -108,8 +108,8 @@ a {
     height: 40px;
     display: flex;
     justify-content: space-between;
-    font-size: 14pt;
-    opacity: .7;
+    font-size: 16pt;
+    opacity: .5;
 }
 
 .footer > nav > a

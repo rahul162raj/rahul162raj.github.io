@@ -40,26 +40,24 @@
     {
       display: none !important;
     }
-    .slider {
-        width: 95%;
-        left: 3%;
-   }
-
+    
+    /*
     .slick-slide {
       margin: 20px 20px;
     }
 
     .slick-slide img {
       width: 100%;
-      height: 25vw;
     }
-
+      */
     .slick-prev:before,
     .slick-next:before {
       color: black;
     }
 
-
+    .slider {
+        width: 100%;
+   }
     .slick-slide {
       transition: all ease-in-out .3s;
       opacity: .2;
@@ -82,109 +80,44 @@
     }
     .c-bottom-heading
     {
-      left: 15%;font-family: Helvetica, sans-serif;font-weight: bolder;
+      left: 15%;
+      font-family: fut;
     }
     .c-bottom-center-heading
     {
       font-weight: lighter;opacity: 0.6;
+      font-family: seui;
     }
     .c-page-no
     {
-      font-weight: bold;padding-top: 5px;font-family: fut
+      padding-top: 5px;font-family: fut
     }
 
     @media screen and (max-width: 767px)
 {
     .slick-slide img {
     width: 65%;
-    height: 60vw;
+    height: 50vw;
       }
 }
-/*
-   @media screen and (max-width:1350px)
-{
-
-  .slick-prev
-    { 
-      top:370px;
-      left: 45%;
-    }
-    .slick-next
-    { 
-      top:370px;
-      left: 55%;
-    }
-
-}
-    @media screen and (max-width: 920px)
-{
-
-    .slide-grid
-    {
-      display: block;
-      top:350px;
-    }
-    .c-bottom-center-heading
-    {
-      left:5%;
-    }
-    .c-page-no
-    {
-      left:5%;
-    }
-    .c-bottom-heading
-    {
-      left:5%;
-    }
-    .slick-slide img {
-      width: 100%;
-      height: 25vw;
-    }
-
-    .slider {
-        width: 95%;
-        margin: 70px auto;
-        position: absolute;
-    }
-
-    .slick-prev
-    { 
-      top:250px;
-      left: 10px;
-      padding: 5%;
-    }
-    .slick-next
-    { 
-      top:250px;
-      left: 50px;
-      padding: 5%;
-    }
 
 
-}
-
-    @media screen and (max-width: 468px)
-{
-  .slick-slide img {
-      width: 100%;
-      height: 50vw;
-    }
-
-}
-*/
+.headers ul {
+     margin-right: 90px;
+  }
 
 
   </style>
 
 </head>
-<body>
+<body class="bg-img">
 
 
     <div id="header-file" style="z-index: 1;height: 90px;">
     
     </div>
 
- <div class="container-fluid">
+ <div class="container-fluid mx-5" style="margin-top: 2.5em !important">
  	<div class="row">
 	  	<section class="variable slider">
 	    <div >
@@ -200,23 +133,23 @@
 </div>
 </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid my-1">
   <div class="row d-flex reverse-row justify-contents-center">
   	<div class="col-md-3 offset-md-1">
-  		<h2 class="c-bottom-heading"><span id="bottom-heading">IMERSIVE<br>EDUCATION</span></h2>
+  		<h3 class="c-bottom-heading"><span id="bottom-heading">IMMERSIVE<br>EDUCATION</span></h3>
   	</div>
     
-    <div class="offset-md-1 col-md-3">
-    	<h6 class="c-bottom-center-heading"> <span id="bottom-center-heading">Future of education is in AR Out of the box into the space</span> </h6>
+    <div class="mx-5  col-md-3" style="padding: 0px 38px;">
+    	<span class="c-bottom-center-heading"> <span id="bottom-center-heading">Future of education is in AR<br> Out of the box into the space</span> </span>
     </div>
-    <div class="offset-md-1 col-md-1 ">
-    	<h5 class="c-page-no"><span id="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/03</span></h5>
+    <div class="offset-md-2 col-md-1 " style="max-width: 5%;">
+    	<h5 class="c-page-no" style="font-size: 1.15em;"><span id="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/03</span></h5>
     </div>
-    <div class="col-md-1" style="display: flex;padding-top:5px;padding-bottom:10px; ">
-    	<span class="prev">
+    <div class="col-md-1 " style="display: flex;padding-top:8px;padding-bottom:10px; ">
+    	<span class="prev pl-1">
     		<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
     	</span>
-    	<span class="next">
+    	<span class="next pl-1">
     	<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
     	</span>
     </div> 
