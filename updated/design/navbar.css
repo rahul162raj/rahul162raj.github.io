@@ -67,7 +67,8 @@ body
 .headers .logo {
   display: block;
   float: left;
-  font-size: 1.8em;
+  /*font-size: 1.8em;*/
+  font-size: 26px;
   padding: 12px 25px;
   text-decoration: none;
   margin-left: 30px;
@@ -273,3 +274,28 @@ body,html
   flex-direction: column-reverse; 
 }
 }
+
+
+html 
+{
+ font-size: 1rem; 
+}
+
+/*@media (min-width: 576px) {
+    html { font-size: 1.25rem; }
+}
+@media (min-width: 768px) {
+    html { font-size: 1.5rem; }
+}
+@media (min-width: 992px) {
+    html { font-size: 1.75rem; }
+}*/
+
+
+@media screen and (min-width:2560px) 
+{
+    html { font-size: 2rem; }
+
+    .container { max-width: 2000px; } 
+}
+
