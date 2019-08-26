@@ -159,11 +159,11 @@
       <div class="offset-2 col-1 " style="max-width: 5%;">
       	<h5 class="c-page-no" style="font-size: 1.15em;"><span id="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/03</span></h5>
       </div>
-      <div class="col-1 " style="display: flex;padding-top:8px;padding-bottom:10px; ">
-      	<span class="prev pl-1">
+      <div class="col-1 " style="display: flex;padding-top:8px;padding-bottom:10px;">
+      	<span class="prev pl-1 cnt">
       		<button class="slick-prev arrow" aria-label="Previous" type="button"><img src="assets/next.png"/></button>
       	</span>
-      	<span class="next pl-1">
+      	<span class="next pl-1 cnt">
       	<button class="slick-next arrow"  type="button"><img src="assets/pre.png"/></button>
       	</span>
       </div> 
@@ -176,14 +176,23 @@
 
   $(document).ready(function() {
            
-      $('.carousel').flickity({
+      var flick = $('.carousel').flickity({
         groupCells:2,
         fade:true,
         cellAlign: 'left',
         pageDots: false,
         wrapAround:true,
-        percentPosition: true
+        percentPosition: true,
+        on: {
+              change: function( index ) {
+              var a = index + 1;
+              $("#page-no").text('0'+a); 
+              check(a);
+              }
+            }
       });
+
+      /*console.log($('.carousel').flickity().data('flickity').selectedIndex);*/
       $('.slick-prev ').on( 'click', function() {
          $('.carousel').flickity( 'previous', true );
         });
@@ -191,35 +200,13 @@
       $('.slick-next').on( 'click', function() {
           $('.carousel').flickity( 'next', true );
         });
-            
-          
-        var a = 1;
-        var max = 3;
+                    
         
-        
-        $(".slick-prev").click(function() { 
-                a = a - 1;
-                if ( a>max) 
-                {
-                  a=1; 
-                }
-                else if (a<1) {
-                  a=max; 
-                }
-                 check(a);
-              }); 
 
-        $(".slick-next").click(function() { 
-                a = a + 1;
-                if ( a>max) 
-                {
-                  a=1; 
-                }
-                else if (a<1) {
-                  a=max; 
-                }
-                 check(a);
-              }); 
+        $(".cnt").click(function() 
+        { 
+              
+        });
 
 
       
@@ -228,27 +215,19 @@
         
           switch(a)
           {
-            case 1:  $("#page-no").text("01");
+            case 1:  
                      $("#bottom-heading").html("IMERSIVE<br>EDUCATION");
                      $("#bottom-center-heading").html("Future of education is in AR <br> Out of the box into the space");   
                     break;
-            case 2:  $("#page-no").text("02");
+            case 2:  
                      $("#bottom-heading").html("AUGMENTED REALITY<br>MOTOR");
                      $("#bottom-center-heading").html("AR experiences can now be launched directly from Safari as part of a new feature called AR Quick Look, allowing instant access for shoppers to better understand products in 3D and Augmented Reality. The possibility to go from a web-page to an AR experience with a tap is completely new."); 
                     break;
-            case 3:  $("#page-no").text("03");
+            case 3:  
                      $("#bottom-heading").html("BRING HOME EVEN <br> BEFORE YOU BUY IT");
                      $("#bottom-center-heading").html("AR experiences can now be launched directly from Safari as part of a new feature called AR Quick Look, allowing instant access for shoppers to better understand products in 3D and Augmented Reality. The possibility to go from a web-page to an AR experience with a tap is completely new."); 
                     break;
-            case 4:  $("#page-no").text("04");
-                     $("#bottom-heading").html("IMERSIVE<br>EDUCATION");
-                    break;
-            case 5:  $("#page-no").text("05");
-                     $("#bottom-heading").html("IMERSIVE<br>EDUCATION");
-                    break;
-            case 6:  $("#page-no").text("06");
-                    $("#bottom-heading").html("IMERSIVE<br>EDUCATION");
-                    break;        
+          
           }
 
         
