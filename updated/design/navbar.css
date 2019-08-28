@@ -173,7 +173,7 @@ body
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 .headers {
     margin-top: 0px;
     background-color: white;
@@ -208,7 +208,7 @@ h3 {
 
 .menu
 {
-  margin-top: 17px !important ;
+  margin-top: 15px !important ;
 }
 
 .contact-button
