@@ -22,10 +22,12 @@
   <style type="text/css">
   
 
-    .item-certify
+    .item-certify:hover
     {
-      border-left: solid 2.5px #F9414D;
-      padding-left: 20px;
+      border-left: solid 3px #F9414D;
+      border-right: solid 3px #F9414D;
+      padding-left: 10px;
+      cursor: pointer;
     }
 
     
@@ -108,21 +110,25 @@
    {
       margin-left: 0em !important
    }
-   .ml-manual
-{
-  margin-left: -1em;
-}
+     .ml-manual
+  {
+    margin-left: -1em;
+  }
 }
 
 
-@media screen and (max-width: 768px)
+/*@media screen and (max-width: 768px)
 {
 .cert2
    {
     display: none;
    }
+.cert1
+   {
+    display: none;
+   }
 }
-
+*/
 body
 {
   font-family: seui;
@@ -136,8 +142,34 @@ body
 </style>
 </head>
 
+
+
+
  
 <body class="bg-img">
+
+
+<script type="text/javascript">
+
+$( document ).ready(function() {
+
+    var a = 1;
+    checkcourse(a);
+});
+
+
+function checkcourse(a)
+{
+  switch(a)
+  {
+    case 1:$(".course-display").load("course1.html");break;
+    case 2:$(".course-display").load("course2.html");break;
+    case 3:$(".course-display").load("course3.html");break;
+
+  }
+}
+  
+</script>
 
   <div id="header-file" style="height: 100px;"></div>
    
@@ -150,161 +182,40 @@ body
     <br>
 
 <div class="row my-5 offset-1" style="font-family: seui-b">
-    <div class="col-3">
-    <h4 class="item-certify">Certified UX & UI <br> AR & VR Designer</h4>
+    <div class="col-md-3 col-sm-12" onclick="checkcourse(1)">
+    <h4 class="item-certify">Certified UX & UI 1 <br> AR & VR Designer</h4>
     </div> 
-    <div class="col-3 offset-1">
-     <h4 class="item-certify cert1">Certified UX & UI <br> AR & VR Designer</h4>
+    <div class="col-md-3 offset-md-1"  onclick="checkcourse(2);">
+     <h4 class="item-certify cert1">Certified UX & UI 2<br> AR & VR Designer</h4>
     </div>
-    <div class="col-3 offset-1">
-     <h4 class="item-certify cert2">Certified UX & UI <br> AR & VR Designer</h4>
+    <div class="col-md-3 offset-md-1"  onclick="checkcourse(3);">
+     <h4 class="item-certify cert2">Certified UX & UI 3<br> AR & VR Designer</h4>
     </div>
 </div>
   <br>
-      <div class="ml-manual" style="font-family: seui;">
-      <div class="row move-left">
-      <div class="offset-2 row">
-      <h5>Course Introduction</h5>
-      </div>
-      <br>
-      <div class="offset-2 row ">
-        <div class="mx-5 my-3 content-inside">
-      Zynga is a leading developer of the world's most popular social games that are played by millions of people
-      around the world each day. We are headquartered in San Francisco and have additional offices in the U.S ,
-      Canada, U.K and India. Since our founding in 2007, our mission has been to connect the world through games
-      and delight consumers with social gaming experiences. To-date, more than one billion people have played our
-      games across Web and mobile, including FarmVille, Zynga Poker, Words With Friends, Hit it Rich! Slots and CSR.
-        </div>
-     </div>
-    </div>
-    <br>
-
-    <div class="row move-left">
-      <div class="offset-2 row">
-      <h5>What you’ll learn</h5>
-      </div>
-      <br>
-      <div class="offset-2 row ">
-         <div class="mx-5 my-3 content-inside">
-      Development of key game systems.<br>
-      Contribute to design discussions and key design decisions.<br>
-      Work closely with designers, software engineers, artists, product managers, and producers to deliver high quality
-      features from concept to completion.<br>
-      Create and maintain detailed designs for all phases of development.<br>
-      Clearly communicate design intent to team.<br>
-      Experience developing mobile games for either iPhone or Android devices.</div>
-     </div>
-    </div>
-    <br>
-
-    <div class="row move-left">
-      <div class="offset-2 row">
-      <h5>Are there any course requirements or prerequisites?</h5>
-      </div>
-      <br>
-      <div class="offset-2 row ">
-         <div class="mx-5 my-3 content-inside">
-      This internship/co-op is for currently enrolled students only. Please include a link to your online portfolio within
-      your resume.</div>
-     </div>
-    </div>
-    <br>
-
-     <div class="row move-left">
-      <div class="offset-2 row">
-      <h5>Who this course is for:</h5>
-      </div>
-      <br>
-      <div class="offset-2 row ">
-         <div class="mx-5 my-3 content-inside">
-      This internship/co-op is for currently enrolled students only. Please include a link to your online portfolio within
-      your resume.</div>
-     </div>
-    </div>
-<br>
-     <div class="row move-left">
-      <div class="offset-2 row">
-      <h5>what you will take away:</h5>
-      </div>
-      <br>
-      <div class="offset-2 row ">
-         <div class="mx-5 my-3 content-inside">
-      This internship/co-op is for currently enrolled students only. Please include a link to your online portfolio within
-      your resume.</div>
-     </div>
-    </div>
-<br>
-
-      <div class="row move-left">
-      <div class="offset-2 row" style="width: 100%;">
-      <h5>Instructor:</h5>
-      </div>
-      <br>
-      <div class="offset-2 row" style="width: 100%;">
-         <div class="mx-5 my-3 d-flex">
-          <div class="col-2">
-          <span>
-            <img src="assets/round.png" class="round">
-          </span>
-          </div>
-          <div class="col" style="width: 100%;">
-          <span class="Instructor">
-            <span class="theading">Manu Vikraman</span><br>
-               <span class="content-inside">CEO & CDO - Swevens Immersive Studio</span>
-          </span>
-         </div>
-       </div>
-      </div>
-
-       <div class="offset-3 row text-center">
-          <div class="mx-3 col-1">
-          <img src="assets/round.png" class="round-small">
-          </div>
-          <div class="col">
-          <img src="assets/round.png" class="round-small">
-          </div>
-       </div>
-     </div>
-<br>
-      <div class="row move-left">
-      <div class="offset-2 row" style="width: 100%;">
-      <h5>Duration:</h5>
-      </div>
-      <br>
-      <div class="offset-2 row text-justify">
-         <div class="mx-5 my-3 theading">
-      2 months (Mon - Wed - Fri)
-          </div>
-     </div>
-   </div>
 
 
-
-<br>
-
-  
- <div class="row move-left">
-      <div class="offset-2 row" style="width: 100%;">
-      <h5>Course Fee:</h5>
-      </div>
-      <br>
-      <div class="offset-2 row text-justify">
-         <div class="mx-5 my-3">
-      <span class="theading">INR 25000</span> <span class="content-inside">+ Applicable taxes</span>
-          </div>
-     </div>
-    </div>
-
-  </div>
-<br>
-<br>
+<div class="course-display"></div>
 
 
-    <div class="row d-flex justify-content-center">
-  <button class="btn btn-danger">Register</button>
-    </div>
 </div>
-</div>
+
+<!-- <script type="text/javascript">
+
+$(window).scroll(function() {     
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $(".headers").addClass("actives");
+        console.log("scroll");
+    }
+    else {
+        $(".headers").removeClass("actives");
+    }
+});
+
+</script> -->
+
+
  <script src="design/main.js"></script>
 </body>
 </html>

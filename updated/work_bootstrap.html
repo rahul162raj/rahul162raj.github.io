@@ -48,18 +48,17 @@
       .carousel-cell {
         opacity: 0.1; 
          margin-right: -12px; 
-
       }
 
       .carousel-cell img
       {
-        height: 50vh;
+        height: 60vh;
         width: auto;
       }
 
       .carousel-cell.is-selected {
           opacity: 1;
-         height: 50vh;
+         height: 60vh;
 
         
       }
@@ -89,65 +88,49 @@
       }
 
 
+      @media screen and (min-width: 1440px)
+      {
+        .bottom-footer
+        {
+          position: absolute;bottom: 0;height: 130px;margin-bottom: 3rem;margin-top: 3rem;
+        }
+      }
+
+       @media screen (min-width:320px) and (max-width: 1400px)
+      {
+        .bottom-footer
+        {
+          position: relative;bottom: 0;height: auto;margin-bottom: 0px;margin-top: 3rem;
+        }
+      }
+      .arrow:hover
+      {
+        cursor: pointer;
+      }
+
     </style>
 
   </head>
   <body class="bg-img">
 
 
-      <div id="header-file" style="z-index: 1;height: 90px;">
+      <div id="header-file" style="z-index: 1;height: 90px;position: relative;">
       
       </div>
 
-      <div class="mx-4 container-fluid" style="position: absolute;top: 40%;transform: translateY(-40%);">
+      <div class="mx-4  container-fluid" style="position: relative;margin-top: 3vh;">
       <div class="carousel">
         <div class="carousel-cell"><img src="assets/2.png" style="width: 60vw;"></div>
         <div class="carousel-cell"> <img src="assets/1.png" style="width:30vw;"></div>
           <div class="carousel-cell"><img src="assets/3.png" style="width: 40vw;"></div>
-        <div class="carousel-cell"> <img src="assets/4.png" style="width:58vw;"></div>
-          <div class="carousel-cell"><img src="assets/5.png" style="width: 60vw;"></div>
-        <div class="carousel-cell"> <img src="assets/6.png" style="width:30vw;"></div>      
+        <div class="carousel-cell"><img src="assets/4.png" style="width:58vw;"></div>
+          <div class="carousel-cell"><a href="usdz/redvelvet.usdz"><img src="assets/5.png" style="width: 60vw;"></a></div>
+        <div class="carousel-cell"> <a href="usdz/tansmallsofa.usdz"><img src="assets/6.png" style="width:30vw;"></a></div>      
       </div>
     </div>
 
-   <!--div class="container-fluid mx-5" style="margin-top: 2.5em !important">
-  	  	 <section class="regular slider">
-  	    <div >
-  	      <img src="assets/1.png">
-  	    </div>
-  	    <div >
-  	      <img src="assets/2.png">
-  	    </div>
-        <div >
-          <img src="assets/1.png">
-        </div>
-        <div >
-          <img src="assets/2.png">
-        </div><div >
-          <img src="assets/1.png">
-        </div>
-        <div >
-          <img src="assets/2.png">
-        </div><div >
-          <img src="assets/1.png">
-        </div>
-        <div >
-          <img src="assets/2.png">
-        </div><div >
-          <img src="assets/1.png">
-        </div>
-        <div >
-          <img src="assets/2.png">
-        </div> 
-  	     <div >
-  	      <a href="usdz/tansmallsofa.usdz" rel="ar"><img src="assets/Group3.png"></a>
-  	    </div> 
-  	  </section 
 
-      
-  </div-->
-
-    <div class="container-fluid my-5" style="position: absolute;bottom: 0;height: 150px;">
+    <div class="container-fluid bottom-footer" >
     <div class="row d-flex reverse-row justify-contents-center">
     	<div class="col-3 offset-1">
     		<h3 class="c-bottom-heading"><span id="bottom-heading">IMMERSIVE<br>EDUCATION</span></h3>
