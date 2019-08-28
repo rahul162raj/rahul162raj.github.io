@@ -47,43 +47,43 @@
       <br>
       <br>
       <div class="my-2"> 
-        <p style="color: #D6D6D6;font-size: .8rem;" class="theading">CHOOSE SERVICES YOU WISH TO AVAIL</p>
+        <p style="color: #B7B7B7;font-size: .8rem;" class="theading">CHOOSE SERVICES YOU WISH TO AVAIL</p>
       </div> 
       <br>
       <div class="row text-center"> 
-        <div class="col-md-4">
-          <div class="fheading border-box">AUGMENTED REALITY</div>
+        <div class="col-md-3">
+          <div class="fheading border-box" style="font-size: 0.8em;">AUGMENTED REALITY</div>
         </div>
-        <div class="col-md-4">
-          <div class="fheading border-box">VIRTUAL REALITY</div>
+        <div class="col-md-3">
+          <div class="fheading border-box"  style="font-size: 0.8em;">VIRTUAL REALITY</div>
         </div>
-        <div class="col-md-4">
-          <div class="fheading border-box">MIXED REALITY</div>
+        <div class="col-md-3">
+          <div class="fheading border-box"  style="font-size: 0.8em;">MIXED REALITY</div>
         </div>
       </div>
       <br>
       <div class="row my-4">
       <div class="container my-4">
 		  <div class="row">
-		    <div class="col-md-6 mx-auto">
+		    <div class="col-md-6 mx-auto border-line">
 		      <form class="form-group" method="post" action="mail-function.php">
 		        <input type="text" id="name" class="form-control border-change" required>
 		        <label class="form-control-placeholder" for="name">Name</label>
 		    </div>
-		    <div class="col-md-6 mx-auto">
+		    <div class="col-md-6 mx-auto border-line">
 		      <div class="form-group">
 		        <input type="email" id="email" class="form-control border-change" required>
 		        <label class="form-control-placeholder" for="email">Email</label>
 		      </div>
 		    </div>
-		    <div class="col-md-12 mt-5">
+		    <div class="col-md-12 mt-5 border-line">
 		      <div class="form-group">
 		        <input type="text" id="text" class="form-control border-change" required>
 		        <label class="form-control-placeholder" for="text">Write your message here</label>
 		      </div>
 		    </div>
 		    <div class="col-md-2 ml-auto mt-3">
-		       <div class="btn-group btn-group-sm">
+		       <div class="btn-group btn-group-sm btn-block">
   					<button type="button" class="btn btn-danger btn-block" style="border-radius: 20px;background-color: #F9535E">Send</button>
             
 			   </div> 
@@ -137,19 +137,30 @@
 <style type="text/css">
   .border-box:hover
   {
-    border:solid 2px #C86C7B;
-    padding: 2% 10%;
+    border:solid 2px #F9535E;
+    padding: 2%;
+    color: black;
+    cursor: pointer;
   }
   .border-box
   {
-    border:solid 2px #D6D6D6;
-    padding: 2% 10%;
+    border:solid 2px #B7B7B7;
+    padding: 2%;
+    color: #B7B7B7; 
   }
 
 .content-inside
 {
   color: #666666;
   opacity: .8;
+
+}
+
+label
+{
+  margin-top: .8em;
+  color: #B7B7B7; 
+  opacity: 1 !important;
 }
 
 
@@ -168,12 +179,13 @@
   /*padding: 7px 0 0 13px;*/
   transition: all 200ms;
   opacity: 0.5;
+  font-size: .9rem;
 }
 
 .form-control:focus + .form-control-placeholder,
 .form-control:valid + .form-control-placeholder {
   font-size: 90%;
-  transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -150%, 0);
   opacity: 1;
   color: #F9535E;
 }
@@ -181,16 +193,17 @@
 .border-change
 {
 	border: none;
-	border-bottom: solid 1px #D6D6D6;
+	border-bottom: solid 1.5px #B7B7B7;
 	background-color: transparent !important;
 	border-radius: 0px;
 }
 
 .form-control:focus {
   border: none;
-  border-bottom: solid 1px #D6D6D6;
+  border-bottom: solid 2px #D6D6D6;
   background-color: transparent !important;
   box-shadow: none !important;
+  opacity: 1;
 }
 
 
@@ -214,5 +227,33 @@ body
 {
   font-family: fut;
 }
+
+input {
+  color: transparent !important;
+  text-shadow: 0 0 0 black !important;
+
+  &:focus {
+      outline: none;
+  }
+}
+
+
+.form-control {
+
+padding: 0px !important;
+
+  border: none;
+  border-bottom: solid 2px #D6D6D6;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  opacity: 1;
+}
+
+.border-line:hover
+{
+  border-left:solid 2px red;
+}
+
+
 </style>
 

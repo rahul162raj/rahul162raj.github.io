@@ -2,7 +2,6 @@
     margin: 0;
     position: relative;
     z-index: 1;
-    color: #333;
     box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -108,13 +107,13 @@ a {
     height: 40px;
     display: flex;
     justify-content: space-between;
-    font-size: 16pt;
+    font-size: 18pt;
     opacity: .5;
 }
 
 .footer > nav > a
 {
-     color: #636262;
+     color: #000 !important;
 }
 .title-mob
     {
