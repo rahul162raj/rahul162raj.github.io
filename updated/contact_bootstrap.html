@@ -52,35 +52,35 @@
       <br>
       <div class="row text-center"> 
         <div class="col-md-4" onclick="checkcontent(1);">
-          <div class="fheading border-box" id="content1" style="font-size: 0.7em;">AUGMENTED REALITY</div>
+          <div class="fheading border-box manual-bottom" id="content1" style="font-size: 0.7em;">AUGMENTED REALITY</div>
         </div>
         <div class="col-md-3" onclick="checkcontent(2);">
-          <div class="fheading border-box" id="content2" style="font-size: 0.7em;">VIRTUAL REALITY</div>
+          <div class="fheading border-box manual-bottom" id="content2" style="font-size: 0.7em;">VIRTUAL REALITY</div>
         </div>
         <div class="col-md-3" onclick="checkcontent(3);">
-          <div class="fheading border-box" id="content3" style="font-size: 0.7em;">MIXED REALITY</div>
+          <div class="fheading border-box manual-bottom" id="content3" style="font-size: 0.7em;">MIXED REALITY</div>
         </div>
       </div>
       <br>
-      <div class="row my-5">	
-		    <div class="col-md-6 mx-auto border-line">
+      <div class="row input-contents">	
+		    <div class="col-md-6 mx-auto border-line item-bottom">
 		      <form class="form-group" method="post" action="mail-function.php">
 		        <input type="text" id="name" class="form-control border-change" required>
 		        <label class="form-control-placeholder" for="name">Name</label>
 		    </div>
-		    <div class="col-md-6 mx-auto border-line">
+		    <div class="col-md-6 mx-auto border-line item-bottom">
 		      <div class="form-group">
 		        <input type="email" id="email" class="form-control border-change" required>
 		        <label class="form-control-placeholder" for="email">Email</label>
 		      </div>
 		    </div>
-		    <div class="col-md-12 mt-5 border-line">
+		    <div class="col-md-12 border-line manual-bottom item-content">
 		      <div class="form-group">
 		        <input type="text" id="text" class="form-control border-change" required>
 		        <label class="form-control-placeholder" for="text">Write your message here</label>
 		      </div>
 		    </div>
-		    <div class="col-md-2 ml-auto mt-3">
+		    <div class="col-md-2 ml-auto mt-3 item-bottom">
 		       <div class="btn-group btn-group-sm btn-block">
   					<button type="button" class="btn btn-danger btn-block" style="border-radius: 20px;background-color: #F9535E;box-shadow: 0px 6px 15px -10px rgb(228,0,0);">Send</button>
             
@@ -117,7 +117,7 @@
         <b>+919444092103</b>
       </p>
       
-      <div style="display: flex;opacity: .5;">
+      <div style="display: flex;opacity: .5;" class="footer-content">
       	<span class="ml-0"><a href="https://www.facebook.com/swevensindia" target="_blank"><i class="fa fa-facebook-square"></i></a></span>
       	<span class="ml-3"><a href="https://medium.com/swevens" target="_blank"><i class="fa fa-medium"></i></a></span>
       	<span class="ml-3"> <a href="https://in.linkedin.com/company/swevens" target="_blank"><i class="fa fa-linkedin-square"></i></a></span>
@@ -133,6 +133,18 @@
 
 
 <style type="text/css">
+
+  
+  .write-content
+  {
+    margin-top: 3rem;
+  }
+
+  .input-contents
+  {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
 
   .border-box:hover
   {
@@ -278,6 +290,48 @@ padding: 0px !important;
 {
     html { font-size: 2rem; }
 }
+
+
+ @media screen and (max-width:768px) 
+{
+.contents
+{
+  padding: 10%;
+}
+.bg-img
+{
+  
+  background-position: center;
+}
+.manual-bottom
+{
+  margin-bottom: 2rem;
+}
+.border-box
+  {
+    padding: 3% !important;
+  }
+
+  .input-contents
+  {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .write-content
+  {
+    margin-top: 0rem;
+  }
+  .item-bottom
+  {
+    margin-bottom: 3rem;
+  }
+  .footer-content
+  {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+} 
+
 
 </style>
 

@@ -280,18 +280,10 @@ body,html
 
 @media screen and (max-width:768px) 
 {
-.contents
-{
-  padding: 15%;
-}
 .bg-img
 {
   
   background-position: center;
-}
-.reverse-row
-{
-  flex-direction: column-reverse; 
 }
 }
 

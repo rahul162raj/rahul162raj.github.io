@@ -98,42 +98,76 @@
   font-size: 1.2em;
 }
 
-/*@media screen and (max-width: 598px)
 
-{
 
-   /* .cert1
-   {
-    display: none;
-   }
-
-   .move-left
-   {
-    margin-left: -3em !important;
-   }
-   .mx-4
-   {
-      margin-left: 0em !important
-   }
-     .ml-manual
+.adjust-left
   {
-    margin-left: -1em;
+    margin-left: 3rem;
   }
-}*/
 
-
-/*@media screen and (max-width: 768px)
+  .page-head
 {
-.cert2
-   {
-    display: none;
-   }
-.cert1
-   {
-    display: none;
-   }
+  font-size:2.5rem;
 }
-*/
+
+  .page-bottom-head
+  {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+
+  .certify-container
+  {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: seui-b;
+    margin-left: -40px;
+  }
+@media screen and (max-width: 767px)
+{
+  .ml-head
+  {
+    margin-left: 1.5rem;
+    font-family: seui-b;
+  }
+
+  .adjust-left
+  {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+    .page-head
+  {
+    font-size:1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .page-bottom-head
+  {
+    font-size: 0.77rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .head-certify
+  {
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
+
+  .certify-container
+  {
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    font-family: seui-b;
+    margin-left: -20px;
+
+  }
+}
+
 body
 {
   font-family: seui;
@@ -143,6 +177,7 @@ body
 {
   font-family: seui-b;
 }
+
 
 </style>
 </head>
@@ -180,21 +215,21 @@ function checkcourse(a)
    
   <div class="container" style="margin-top: 5vw;">
 
-    <h1 class="theading">AR VR Hands on Design Training</h1>
+    <h1 class="theading page-head">AR VR Hands on Design Training</h1>
 
-    <h5 class="my-3 mx-5" style="color: #727171;">Hands-on AR VR design training</h5>
+    <h5 class="my-3 page-bottom-head" style="color: #727171;">Hands-on AR VR design training</h5>
 
     <br>
 
-<div class="row my-5 text-center" style="font-family: seui-b;margin-left: -40px;">
+<div class="row text-center certify-container">
     <div class="col-md-3 item-certify" onclick="checkcourse(1)">
-    <h4 >Certified UX & UI <br> AR & VR Designer</h4>
+    <h4 class="head-certify">Certified UX & UI <br> AR & VR Designer</h4>
     </div> 
     <div class="col-md-3 item-certify"  onclick="checkcourse(2);">
-     <h4 class="cert1">Certified UX <br> AR & VR Expert</h4>
+     <h4 class="cert1 head-certify">Certified UX <br> AR & VR Expert</h4>
     </div>
     <div class="col-md-3 item-certify"  onclick="checkcourse(3);">
-     <h4 class="cert2">Certified UI<br> AR & VR Expert</h4>
+     <h4 class="cert2 head-certify">Certified UI<br> AR & VR Expert</h4>
     </div>
 </div>
   <br>

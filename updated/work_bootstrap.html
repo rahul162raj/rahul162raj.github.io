@@ -12,9 +12,7 @@
 
       <script type="text/javascript" src="js/resources/bootstrap.min.js"></script>
 
-  <!-- 
-      <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-      <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"> -->
+       <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
       <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
       <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -62,6 +60,10 @@
 
         
       }
+      .carousal-left 
+      {
+        margin-left: 1.5rem;
+      }
      
       .c-bottom-heading
       {
@@ -99,6 +101,45 @@
         cursor: pointer;
       }
 
+
+      @media screen and (max-width: 767px)
+{
+  .pc-content
+  {
+    display: none; 
+  }
+  .mob-content
+  {
+    display: block; 
+  }
+  .carousel-cell img
+  {
+    height: 35vh !important;
+    width: auto;
+  }
+
+  .carousel-cell.is-selected {
+     height: 35vh !important;
+  }
+  .carousal-left 
+      {
+        margin-left: 0rem !important;
+      }
+}
+
+@media screen and (min-width: 768px)
+{
+  .pc-content
+  {
+    display: block; 
+  }
+  .mob-content
+  {
+    display: none; 
+  }
+}
+
+
     </style>
 
   </head>
@@ -109,46 +150,52 @@
       
       </div>
 
-      <!-- <div class="mx-4  container-fluid" style="position: relative;margin-top: 3vh;">
-      <div class="carousel">
-        <div class="carousel-cell"><img src="assets/2.png" style="width: 60vw;"></div>
-        <div class="carousel-cell"> <img src="assets/1.png" style="width:30vw;"></div>
-          <div class="carousel-cell"><img src="assets/3.png" style="width: 40vw;"></div>
-        <div class="carousel-cell"><img src="assets/4.png" style="width:58vw;"></div>
-          <div class="carousel-cell"><a href="usdz/redvelvet.usdz" rel="ar"><img src="assets/5.png" style="width: 60vw;"></a></div>
-        <div class="carousel-cell"><a href="usdz/tansmallsofa.usdz" rel="ar"><img src="assets/6.png" style="width:30vw;"></a></div>  
-        <div class="carousel-cell"><img src="assets/7.jpg" style="width: 60vw;"></div>
-        <div class="carousel-cell"> <img src="assets/8.jpg" style="width:30vw;"></div>    
-      </div>
-    </div> -->
-    <div class="mx-4  container-fluid" style="position: relative;margin-top: 3vh;">
-      <div class="carousel">
-        <div class="carousel-cell"><img src="assets/2.png" style="width: 60vw;"></div>
-        <div class="carousel-cell"> <img src="assets/1.png" style="width:30vw;"></div>
-          <div class="carousel-cell"><img src="assets/3.png" style="width: 40vw;"></div>
-        <div class="carousel-cell"><img src="assets/4.png" style="width:58vw;"></div>
-          <div class="carousel-cell"><a href="usdz/redvelvet.usdz" rel="ar"><img src="assets/5.png" style="width: 60vw;"></a></div>
-        <div class="carousel-cell"><a href="usdz/tansmallsofa.usdz" rel="ar"><img src="assets/6.png" style="width:30vw;"></a></div>  
-        <div class="carousel-cell"><img src="assets/7.jpg" style="width: 60vw;"></div>
-        <div class="carousel-cell"> <img src="assets/8.jpg" style="width:30vw;"></div>    
-      </div>
-    </div>
 
 
-    <div class="container-fluid bottom-footer my-5" >
-    <div class="row d-flex reverse-row justify-contents-center">
-    	<div class="col-3 offset-1">
+     <!--  <div class="carousal-left container-fluid" style="position: relative;margin-top: 3vh;">
+        <div class="carousel">
+          <div class="carousel-cell"><img src="assets/2.png" style="width: 60vw;"></div>
+          <div class="carousel-cell"> <img src="assets/1.png" style="width:30vw;"></div>
+            <div class="carousel-cell"><img src="assets/3.png" style="width: 40vw;"></div>
+          <div class="carousel-cell"><img src="assets/4.png" style="width:58vw;"></div>
+            <div class="carousel-cell"><a href="usdz/redvelvet.usdz" rel="ar"><img src="assets/5.png" style="width: 60vw;"></a></div>
+          <div class="carousel-cell"><a href="usdz/tansmallsofa.usdz" rel="ar"><img src="assets/6.png" style="width:30vw;"></a></div>  
+          <div class="carousel-cell"><img src="assets/7.jpg" style="width: 60vw;"></div>
+          <div class="carousel-cell"> <img src="assets/8.jpg" style="width:30vw;"></div>    
+        </div>
+      </div> -->
+
+
+       <div class="carousal-left container-fluid" style="position: relative;margin-top: 3vh;">
+        <div class="carousel">
+          <div class="carousel-cell"><img src="assets/2.png" ></div>
+          <div class="carousel-cell"> <img src="assets/1.png" ></div>
+            <div class="carousel-cell"><img src="assets/3.png" ></div>
+          <div class="carousel-cell"><img src="assets/4.png" ></div>
+            <div class="carousel-cell"><a href="usdz/redvelvet.usdz" rel="ar"><img src="assets/5.png" ></a></div>
+          <div class="carousel-cell"><a href="usdz/tansmallsofa.usdz" rel="ar"><img src="assets/6.png" ></a></div>  
+          <div class="carousel-cell"><img src="assets/7.jpg" ></div>
+          <div class="carousel-cell"> <img src="assets/8.jpg" ></div>    
+        </div>
+      </div>
+
+
+    <!-- PC content --->
+
+    <div class="container-fluid bottom-footer my-5 pc-content" >
+    <div class="row d-flex justify-contents-center">
+    	<div class="col-md-3 offset-md-1">
     		<h3 class="c-bottom-heading"><span id="bottom-heading">IMMERSIVE<br>EDUCATION</span></h3>
     	</div>
       
-      <div class="col-3 mx-3" style="padding: 0px 38px;">
+      <div class="col-md-3 mx-3" style="padding: 0px 38px;">
       	<span class="c-bottom-center-heading"> <span id="bottom-center-heading">Future of education is in AR<br> Out of the box into the space</span> </span>
       </div>
-      <div class="offset-2 col-1 " style="max-width: 5%;">
+      <div class="offset-md-2 col-md-1 " style="max-width: 5%;">
       	<h5 class="c-page-no" style="font-size: 1.15em;"><span id="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/04</span></h5>
       </div>
-      <div class="col-1 " style="display: flex;padding-top:8px;padding-bottom:10px;">
-      	<span class="prev pl-1 cnt">
+      <div class="col-md-1" style="display: flex;padding-top:5px;padding-bottom:10px;">
+      	<span class="prev pl-3 cnt">
       		<button class="slick-prev arrow" aria-label="Previous" type="button"><img src="assets/next.png"/></button>
       	</span>
       	<span class="next pl-1 cnt">
@@ -158,12 +205,73 @@
     </div>
   </div>
 
+
+  <!--- mobile content -->
+  <div class="container bottom-footer my-5 mob-content" >
+    <div class="row justify-contents-center">
+      <div class="col-2">
+        <h5 class="c-bottom-heading"><span id="bottom-heading">IMMERSIVE EDUCATION</span></h5>
+      </div>
+
+      <div class="col-5 d-flex ml-auto justify-content-end">
+        <h6 class="c-page-no" style="font-size: .7em;"><span id="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/04</span></h6>
+      
+        <div style="display: flex;padding-bottom:10px;">
+          <span class="prev cnt">
+            <button class="slick-prev arrow" aria-label="Previous" type="button"><img src="assets/next.png" height="10px" /></button>
+          </span>
+          <span class="next cnt">
+          <button class="slick-next arrow"  type="button"><img src="assets/pre.png" height="10px" /></button>
+          </span>
+        </div>
+    </div>
+      <div class="col-12">
+        <span class="c-bottom-center-heading"> <span id="bottom-center-heading">Future of education is in AR<br> Out of the box into the space</span> </span>
+      </div>
+    </div>
+
+
+
+    <div style="display: flex;opacity: .5;" class="justify-content-center my-5">
+        <span class="ml-0"><a href="https://www.facebook.com/swevensindia" target="_blank"><i class="fa fa-facebook-square"></i></a></span>
+        <span class="ml-3"><a href="https://medium.com/swevens" target="_blank"><i class="fa fa-medium"></i></a></span>
+        <span class="ml-3"> <a href="https://in.linkedin.com/company/swevens" target="_blank"><i class="fa fa-linkedin-square"></i></a></span>
+      </div>
+
+    </div>
+ 
+
+
+
+
   <script src="design/main.js"></script>
 
   <script type="text/javascript">
 
-  $(document).ready(function() {
-           
+  $(document).ready(function()
+   {
+
+
+      if ($(window).width() < 767)
+    {
+       var flick = $('.carousel').flickity({
+        groupCells:false,
+        fade:true,
+        cellAlign: 'center',
+        pageDots: false,
+        wrapAround:true,
+        percentPosition: true,
+        on: {
+              change: function( index ) {
+              var a = index + 1;
+              $("#page-no").text('0'+a); 
+              check(a);
+              }
+            }
+      });
+    }
+    else
+    {           
       var flick = $('.carousel').flickity({
         groupCells:2,
         fade:true,
@@ -180,7 +288,9 @@
             }
       });
 
-      /*console.log($('.carousel').flickity().data('flickity').selectedIndex);*/
+    }
+
+
       $('.slick-prev ').on( 'click', function() {
          $('.carousel').flickity( 'previous', true );
         });
@@ -189,14 +299,7 @@
           $('.carousel').flickity( 'next', true );
         });
                     
-        
-
-        $(".cnt").click(function() 
-        { 
-              
-        });
-
-
+    
       
       function check(a)
       {
@@ -225,8 +328,13 @@
         
 
       }
-   
+
+
+    
       });
+
+
+
     </script>
 
   </body>
