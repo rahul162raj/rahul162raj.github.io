@@ -37,9 +37,9 @@
  <div id="header-file" style="height: 80px;z-index: 1;"></div>
 
 
- <div class="container contents" style="z-index: -1;margin-top: 6vw;" >
-  <div class="row">
-     <div class="col-md-8"> 
+ <div class="container-fluid contents" style="z-index: -1;margin-top: 6vw;" >
+  <div class="row justify-content-center d-flex">
+     <div class="col-md-6"> 
       <div > 
         <h2 class="fheading">Lets build a<br>
         better world together.</h2>
@@ -51,20 +51,18 @@
       </div> 
       <br>
       <div class="row text-center"> 
-        <div class="col-md-3">
-          <div class="fheading border-box" style="font-size: 0.8em;">AUGMENTED REALITY</div>
+        <div class="col-md-4" onclick="checkcontent(1);">
+          <div class="fheading border-box" id="content1" style="font-size: 0.7em;">AUGMENTED REALITY</div>
         </div>
-        <div class="col-md-3">
-          <div class="fheading border-box"  style="font-size: 0.8em;">VIRTUAL REALITY</div>
+        <div class="col-md-3" onclick="checkcontent(2);">
+          <div class="fheading border-box" id="content2" style="font-size: 0.7em;">VIRTUAL REALITY</div>
         </div>
-        <div class="col-md-3">
-          <div class="fheading border-box"  style="font-size: 0.8em;">MIXED REALITY</div>
+        <div class="col-md-3" onclick="checkcontent(3);">
+          <div class="fheading border-box" id="content3" style="font-size: 0.7em;">MIXED REALITY</div>
         </div>
       </div>
       <br>
-      <div class="row my-4">
-      <div class="container my-4">
-		  <div class="row">
+      <div class="row my-5">	
 		    <div class="col-md-6 mx-auto border-line">
 		      <form class="form-group" method="post" action="mail-function.php">
 		        <input type="text" id="name" class="form-control border-change" required>
@@ -84,12 +82,12 @@
 		    </div>
 		    <div class="col-md-2 ml-auto mt-3">
 		       <div class="btn-group btn-group-sm btn-block">
-  					<button type="button" class="btn btn-danger btn-block" style="border-radius: 20px;background-color: #F9535E">Send</button>
+  					<button type="button" class="btn btn-danger btn-block" style="border-radius: 20px;background-color: #F9535E;box-shadow: 0px 6px 15px -10px rgb(228,0,0);">Send</button>
             
 			   </div> 
 		    </div>
-		  </div>
-		</div>
+		  
+	
   </form>
 
         
@@ -97,7 +95,7 @@
       </div>
       </div>
     
-    <div class="offset-md-1 col-md-3">
+    <div class="offset-md-1 col-md-2">
       <h5 class="fheading" style="font-size: 1.05em;">CONTACT US</h5>
       <p class="my-3 content-inside">AR experiences can now be launched 
         directly from Safari as part of a new 
@@ -135,18 +133,25 @@
 
 
 <style type="text/css">
+
   .border-box:hover
   {
-    border:solid 2px #F9535E;
-    padding: 2%;
+    border:solid 3px #F9535E;
+    padding: 1%;
     color: black;
     cursor: pointer;
   }
   .border-box
   {
-    border:solid 2px #B7B7B7;
-    padding: 2%;
+    border:solid 3px #B7B7B7;
+    padding: 1%;
     color: #B7B7B7; 
+  }
+  .border-box-active
+  {
+    border:solid 3px #F9535E;
+    padding: 1%;
+    color: black; 
   }
 
 .content-inside
@@ -170,7 +175,7 @@ label
 
 .form-group {
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
 }
 
 .form-control-placeholder {
@@ -251,9 +256,56 @@ padding: 0px !important;
 
 .border-line:hover
 {
-  border-left:solid 2px red;
+  border-left:solid 3px #F9535E;
+}
+
+@media screen and (min-width:1920px)
+{
+    html { font-size: 1.3rem; }
+}
+@media screen and (min-width:1921px)
+{
+    html { font-size: 1.5rem; }
+}
+
+@media screen (min-width:1680px) and (max-width: 1921)
+{
+    html { font-size: 1.3rem; }
 }
 
 
+@media screen and (min-width:2560px)
+{
+    html { font-size: 2rem; }
+}
+
 </style>
 
+<script type="text/javascript">
+
+
+var a;
+$( document ).ready(function() {
+
+     a = 1;
+    var clicked = true;
+    //checkcontent(a);
+});
+
+
+  function checkcontent(a)
+  {
+             console.log("inside")
+
+                if($("#content"+a).hasClass("border-box-active"))
+                {
+                  $("#content"+a).removeClass("border-box-active");
+                }
+                else
+                {
+                   $("#content"+a).addClass("border-box-active");
+                }
+      
+  }
+  
+</script>

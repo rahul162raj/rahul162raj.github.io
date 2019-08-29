@@ -29,6 +29,10 @@
       cursor: pointer;
     }
 
+    .move-left
+    {
+      margin-top: 1rem;
+    }
   
     .round
     {
@@ -53,7 +57,10 @@
     .btn-danger {
     color: #fff;
     background-color: #F9414D;
-    border-color: #d43f3a;
+    box-shadow: 0px 6px 15px -10px rgb(228,0,0);
+
+    margin-bottom: 3rem;
+    /*border-color: #d43f3a;*/
 }
 .btn {
     display: inline-block;
@@ -71,34 +78,34 @@
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: transparent;
-    padding: 6px 12px;
+    padding: 0.5% 1.5%;
     font-size: 14px;
     line-height: 1.42857143;
-    border-radius: 4px;
+    border-radius: 50px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-.ml-manual
+/*.ml-manual
 {
   margin-left: -4em;
-}
+}*/
 .content-inside
 {
   color: #6E6E6E;
   font-size: 1.2em;
 }
 
-@media screen and (max-width: 598px)
+/*@media screen and (max-width: 598px)
 
 {
 
    /* .cert1
    {
     display: none;
-   }*/
+   }
 
    .move-left
    {
@@ -112,7 +119,7 @@
   {
     margin-left: -1em;
   }
-}
+}*/
 
 
 /*@media screen and (max-width: 768px)
@@ -175,19 +182,19 @@ function checkcourse(a)
 
     <h1 class="theading">AR VR Hands on Design Training</h1>
 
-    <h5 class="my-3" style="color: #727171;">Hands-on AR VR design training</h5>
+    <h5 class="my-3 mx-5" style="color: #727171;">Hands-on AR VR design training</h5>
 
     <br>
 
-<div class="row my-5 offset-1 text-center" style="font-family: seui-b">
-    <div class="col-md-3 col-sm-12 item-certify" onclick="checkcourse(1)">
+<div class="row my-5 text-center" style="font-family: seui-b;margin-left: -40px;">
+    <div class="col-md-3 item-certify" onclick="checkcourse(1)">
     <h4 >Certified UX & UI <br> AR & VR Designer</h4>
     </div> 
-    <div class="col-md-3 offset-md-1 item-certify"  onclick="checkcourse(2);">
-     <h4 class="cert1">Certified UX & UI<br> AR & VR Designer</h4>
+    <div class="col-md-3 item-certify"  onclick="checkcourse(2);">
+     <h4 class="cert1">Certified UX <br> AR & VR Expert</h4>
     </div>
-    <div class="col-md-3 offset-md-1 item-certify"  onclick="checkcourse(3);">
-     <h4 class="cert2">Certified UX & UI<br> AR & VR Designer</h4>
+    <div class="col-md-3 item-certify"  onclick="checkcourse(3);">
+     <h4 class="cert2">Certified UI<br> AR & VR Expert</h4>
     </div>
 </div>
   <br>
