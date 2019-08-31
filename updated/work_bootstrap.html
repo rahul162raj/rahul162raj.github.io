@@ -185,14 +185,14 @@
     <div class="container-fluid bottom-footer my-5 pc-content" >
     <div class="row d-flex justify-contents-center">
     	<div class="col-md-3 offset-md-1">
-    		<h3 class="c-bottom-heading"><span id="bottom-heading">IMMERSIVE<br>EDUCATION</span></h3>
+    		<h3 class="c-bottom-heading"><span class="bottom-heading">IMMERSIVE<br>EDUCATION</span></h3>
     	</div>
       
       <div class="col-md-3 mx-3" style="padding: 0px 38px;">
-      	<span class="c-bottom-center-heading"> <span id="bottom-center-heading">Future of education is in AR<br> Out of the box into the space</span> </span>
+      	<span class="c-bottom-center-heading"> <span class="bottom-center-heading">Future of education is in AR<br> Out of the box into the space</span> </span>
       </div>
       <div class="offset-md-2 col-md-1 " style="max-width: 5%;">
-      	<h5 class="c-page-no" style="font-size: 1.15em;"><span id="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/04</span></h5>
+      	<h5 class="c-page-no" style="font-size: 1.15em;"><span class="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/04</span></h5>
       </div>
       <div class="col-md-1" style="display: flex;padding-top:5px;padding-bottom:10px;">
       	<span class="prev pl-3 cnt">
@@ -209,12 +209,12 @@
   <!--- mobile content -->
   <div class="container bottom-footer my-5 mob-content" >
     <div class="row justify-contents-center">
-      <div class="col-2">
-        <h5 class="c-bottom-heading"><span id="bottom-heading">IMMERSIVE EDUCATION</span></h5>
+      <div class="col-5">
+        <h5 class="c-bottom-heading"><span class="bottom-heading">IMMERSIVE EDUCATION</span></h5>
       </div>
 
       <div class="col-5 d-flex ml-auto justify-content-end">
-        <h6 class="c-page-no" style="font-size: .7em;"><span id="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/04</span></h6>
+        <h6 class="c-page-no" style="font-size: .7em;"><span class="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/08</span></h6>
       
         <div style="display: flex;padding-bottom:10px;">
           <span class="prev cnt">
@@ -226,7 +226,7 @@
         </div>
     </div>
       <div class="col-12">
-        <span class="c-bottom-center-heading"> <span id="bottom-center-heading">Future of education is in AR<br> Out of the box into the space</span> </span>
+        <span class="c-bottom-center-heading"> <span class="bottom-center-heading">Future of education is in AR<br> Out of the box into the space</span> </span>
       </div>
     </div>
 
@@ -249,6 +249,7 @@
   <script type="text/javascript">
 
   $( window ).on( "load", function() {
+
     
 
       var flick = $('.carousel').flickity({
@@ -259,10 +260,11 @@
         wrapAround:true,
         percentPosition: true,
         on: {
-              change: function( index ) {
-              var a = index + 1;
-              $("#page-no").text('0'+a); 
-              check(a);
+              change: function( index )
+              {
+                 a = index*2;
+                $(".page-no").text('0'+(index+1)); 
+                check(a);
               }
             }
       });
@@ -279,10 +281,15 @@
         wrapAround:true,
         percentPosition: true,
         on: {
-              change: function( index ) {
-              var a = index + 1;
-              $("#page-no").text('0'+a); 
-              check(a);
+              change: function( index ) 
+              {
+                var a = index;
+                $(".page-no").text('0'+(index+1)); 
+
+                if(a%2 == 0)
+                {
+                check(a);
+                }
               }
             }
       });
@@ -305,21 +312,21 @@
         
           switch(a)
           {
-            case 1:  
-                     $("#bottom-heading").html("IMERSIVE<br>EDUCATION");
-                     $("#bottom-center-heading").html("Future of education is in AR <br> Out of the box into the space");   
+            case 0:  
+                     $(".bottom-heading").html("IMERSIVE<br>EDUCATION");
+                     $(".bottom-center-heading").html("Future of education is in AR <br> Out of the box into the space");   
                     break;
             case 2:  
-                     $("#bottom-heading").html("AUGMENTED REALITY<br>MOTOR");
-                     $("#bottom-center-heading").html("AR experiences can now be launched directly from Safari as part of a new feature called AR Quick Look, allowing instant access for shoppers to better understand products in 3D and Augmented Reality. The possibility to go from a web-page to an AR experience with a tap is completely new."); 
-                    break;
-            case 3:  
-                     $("#bottom-heading").html("BRING HOME EVEN <br> BEFORE YOU BUY IT");
-                     $("#bottom-center-heading").html("AR experiences can now be launched directly from Safari as part of a new feature called AR Quick Look, allowing instant access for shoppers to better understand products in 3D and Augmented Reality. The possibility to go from a web-page to an AR experience with a tap is completely new."); 
+                     $(".bottom-heading").html("AUGMENTED REALITY<br>MOTOR");
+                     $(".bottom-center-heading").html("AR experiences can now be launched directly from Safari as part of a new feature called AR Quick Look, allowing instant access for shoppers to better understand products in 3D and Augmented Reality. The possibility to go from a web-page to an AR experience with a tap is completely new."); 
                     break;
             case 4:  
-                     $("#bottom-heading").html("OIL RIG TRAINING <br> IN VIRTUAL REALITY");
-                     $("#bottom-center-heading").html("Creating a virtual replica of a rig is a lot cheaper than constantly ferrying students back and forth from one. Since VR technology has matured to the point where the virtual experience is as good as the real thing, students can walk away with a good grasp on their skills, albeit at a fraction of the cost."); 
+                     $(".bottom-heading").html("BRING HOME EVEN <br> BEFORE YOU BUY IT");
+                     $(".bottom-center-heading").html("AR experiences can now be launched directly from Safari as part of a new feature called AR Quick Look, allowing instant access for shoppers to better understand products in 3D and Augmented Reality. The possibility to go from a web-page to an AR experience with a tap is completely new."); 
+                    break;
+            case 6:  
+                     $(".bottom-heading").html("OIL RIG TRAINING <br> IN VIRTUAL REALITY");
+                     $(".bottom-center-heading").html("Creating a virtual replica of a rig is a lot cheaper than constantly ferrying students back and forth from one. Since VR technology has matured to the point where the virtual experience is as good as the real thing, students can walk away with a good grasp on their skills, albeit at a fraction of the cost."); 
                     break;
           
           }
