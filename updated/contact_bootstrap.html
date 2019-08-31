@@ -47,42 +47,46 @@
       <br>
       <br>
       <div class="my-2"> 
-        <p style="color: #B7B7B7;font-size: .8rem;" class="theading">CHOOSE SERVICES YOU WISH TO AVAIL</p>
+        <p style="color: #B7B7B7;font-size: .7rem;" class="theading">CHOOSE SERVICES YOU WISH TO AVAIL</p>
       </div> 
       <br>
       <div class="row text-center"> 
         <div class="col-md-3" onclick="checkcontent(1);">
-          <div class="fheading border-box manual-bottom" id="content1" style="font-size: 0.7em;">AUGMENTED REALITY</div>
+          <div class="fheading border-box manual-bottom" id="content1" style="font-size: 0.8em;">AUGMENTED REALITY</div>
         </div>
         <div class="col-md-3" onclick="checkcontent(2);">
-          <div class="fheading border-box manual-bottom" id="content2" style="font-size: 0.7em;">VIRTUAL REALITY</div>
+          <div class="fheading border-box manual-bottom" id="content2" style="font-size: 0.8em;">VIRTUAL REALITY</div>
         </div>
         <div class="col-md-3" onclick="checkcontent(3);">
-          <div class="fheading border-box manual-bottom" id="content3" style="font-size: 0.7em;">MIXED REALITY</div>
+          <div class="fheading border-box manual-bottom" id="content3" style="font-size: 0.8em;">MIXED REALITY</div>
         </div>
       </div>
       <br>
       <div class="row input-contents">	
 		    <div class="col-md-6 mx-auto border-line item-bottom">
+          <div class="mb-3"></div>
 		      <form class="form-group" method="post" action="mail-function.php">
 		        <input type="text" id="name" class="form-control border-change" required>
 		        <label class="form-control-placeholder" for="name">Name</label>
 		    </div>
 		    <div class="col-md-6 mx-auto border-line item-bottom">
+          <div class="mb-3"></div>
 		      <div class="form-group">
 		        <input type="email" id="email" class="form-control border-change" required>
 		        <label class="form-control-placeholder" for="email">Email</label>
 		      </div>
 		    </div>
 		    <div class="col-md-12 border-line manual-bottom item-content">
+          <div class="mb-3"></div>
 		      <div class="form-group">
 		        <input type="text" id="text" class="form-control border-change" required>
 		        <label class="form-control-placeholder" for="text">Write your message here</label>
 		      </div>
 		    </div>
-		    <div class="col-md-2 ml-auto mt-3 item-bottom">
+		    <div class="col-md-2 ml-auto item-bottom">
 		       <div class="btn-group btn-group-sm btn-block">
-  					<button type="button" class="btn btn-danger btn-block" style="border-radius: 20px;background-color: #F9535E;box-shadow: 0px 6px 15px -10px rgb(228,0,0);">Send</button>
+  					<button type="button" class="btn btn-danger btn-block" style="font-family: fut;
+font-size: 0.6rem;border-radius: 20px;background-color: #F9535E;box-shadow: 0px 6px 15px -10px rgb(228,0,0);">Send</button>
             
 			   </div> 
 		    </div>
@@ -154,21 +158,21 @@
 
   .border-box:hover
   {
-    border:solid 3px #F9535E;
-    padding: 1%;
-    color: black;
+   /* border:solid 3px #F9535E;
+    padding: 3%;
+    color: black;*/
     cursor: pointer;
   }
   .border-box
   {
-    border:solid 3px #B7B7B7;
-    padding: 1%;
+    border:solid 2px #B7B7B7;
+    padding: 2%;
     color: #B7B7B7; 
   }
   .border-box-active
   {
-    border:solid 3px #F9535E;
-    padding: 1%;
+    border:solid 2px #F9535E;
+    padding: 2%;
     color: black; 
   }
 
@@ -176,7 +180,8 @@
 {
   color: #666666;
   opacity: .8;
-
+  font-size: 0.86rem !important;
+  font-family: seui;
 }
 
 label
@@ -202,13 +207,13 @@ label
   /*padding: 7px 0 0 13px;*/
   transition: all 200ms;
   opacity: 0.5;
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 .form-control:focus + .form-control-placeholder,
 .form-control:valid + .form-control-placeholder {
-  font-size: 90%;
-  transform: translate3d(0, -150%, 0);
+  font-size: .7rem;
+  transform: translate3d(0, -170%, 0);
   opacity: 1;
   color: #F9535E;
 }
@@ -274,7 +279,12 @@ padding: 0px !important;
 
 .border-line:hover
 {
-  border-left:solid 3px #F9535E;
+  border-left:solid 2px #F9535E;
+}
+
+.border-line:focus
+{
+  border-left:solid 2px #F9535E;
 }
 
 @media screen and (min-width:1920px)
