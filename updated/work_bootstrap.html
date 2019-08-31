@@ -249,29 +249,9 @@
   <script type="text/javascript">
 
   $(document).ready(function()
-   {
+   {  
 
 
-      if ($(window).width() < 767)
-    {
-       var flick = $('.carousel').flickity({
-        groupCells:false,
-        fade:true,
-        cellAlign: 'center',
-        pageDots: false,
-        wrapAround:true,
-        percentPosition: true,
-        on: {
-              change: function( index ) {
-              var a = index + 1;
-              $("#page-no").text('0'+a); 
-              check(a);
-              }
-            }
-      });
-    }
-    else
-    {           
       var flick = $('.carousel').flickity({
         groupCells:2,
         fade:true,
@@ -288,7 +268,27 @@
             }
       });
 
+
+      if ($(window).width() < 767)
+    { 
+       $('.carousel').flickity('destroy');
+       var flick1 = $('.carousel').flickity({
+        groupCells:false,
+        fade:true,
+        cellAlign: 'center',
+        pageDots: false,
+        wrapAround:true,
+        percentPosition: true,
+        on: {
+              change: function( index ) {
+              var a = index + 1;
+              $("#page-no").text('0'+a); 
+              check(a);
+              }
+            }
+      });
     }
+   
 
 
       $('.slick-prev ').on( 'click', function() {
