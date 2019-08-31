@@ -124,6 +124,13 @@
     font-family: seui-b;
     margin-left: -40px;
   }
+
+  .mob-content
+  {
+    display: none;
+  }
+
+
 @media screen and (max-width: 767px)
 {
   .ml-head
@@ -165,6 +172,10 @@
     font-family: seui-b;
     margin-left: -20px;
 
+  }
+  .mob-content
+  {
+    display:block;
   }
 }
 
@@ -222,14 +233,14 @@ function checkcourse(a)
     <br>
 
 <div class="row text-center certify-container">
-    <div class="col-md-3 item-certify" onclick="checkcourse(1)">
-    <h4 class="head-certify">Certified UX & UI <br> AR & VR Designer</h4>
+    <div class="col-md-3" onclick="checkcourse(1)">
+    <h4 class="head-certify item-certify">Certified UX & UI <br> AR & VR Designer</h4>
     </div> 
-    <div class="col-md-3 item-certify"  onclick="checkcourse(2);">
-     <h4 class="cert1 head-certify">Certified UX <br> AR & VR Expert</h4>
+    <div class="col-md-3"  onclick="checkcourse(2);">
+     <h4 class="cert1 head-certify item-certify">Certified UX <br> AR & VR Expert</h4>
     </div>
-    <div class="col-md-3 item-certify"  onclick="checkcourse(3);">
-     <h4 class="cert2 head-certify">Certified UI<br> AR & VR Expert</h4>
+    <div class="col-md-3"  onclick="checkcourse(3);">
+     <h4 class="cert2 head-certify item-certify">Certified UI<br> AR & VR Expert</h4>
     </div>
 </div>
   <br>
@@ -240,6 +251,14 @@ function checkcourse(a)
 
 </div>
 
+
+<div class="mob-content container">
+ <div style="display: flex;opacity: .5;" class="justify-content-center my-5">
+        <span class="ml-0"><a href="https://www.facebook.com/swevensindia" target="_blank"><i class="fa fa-facebook-square"></i></a></span>
+        <span class="ml-3"><a href="https://medium.com/swevens" target="_blank"><i class="fa fa-medium"></i></a></span>
+        <span class="ml-3"> <a href="https://in.linkedin.com/company/swevens" target="_blank"><i class="fa fa-linkedin-square"></i></a></span>
+      </div>
+</div>
 <!-- <script type="text/javascript">
 
 $(window).scroll(function() {     

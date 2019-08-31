@@ -209,7 +209,7 @@
   <!--- mobile content -->
   <div class="container bottom-footer my-5 mob-content" >
     <div class="row justify-contents-center">
-      <div class="col-5">
+      <div class="col-7">
         <h5 class="c-bottom-heading"><span class="bottom-heading">IMMERSIVE EDUCATION</span></h5>
       </div>
 
@@ -286,10 +286,8 @@
                 var a = index;
                 $(".page-no").text('0'+(index+1)); 
 
-                if(a%2 == 0)
-                {
                 check(a);
-                }
+                
               }
             }
       });
@@ -297,7 +295,7 @@
    
 
 
-      $('.slick-prev ').on( 'click', function() {
+      $('.slick-prev').on( 'click', function() {
          $('.carousel').flickity( 'previous', true );
         });
 
@@ -312,19 +310,23 @@
         
           switch(a)
           {
-            case 0:  
+            case 0: 
+            case 1:  
                      $(".bottom-heading").html("IMERSIVE<br>EDUCATION");
                      $(".bottom-center-heading").html("Future of education is in AR <br> Out of the box into the space");   
                     break;
-            case 2:  
+            case 2:
+            case 3:   
                      $(".bottom-heading").html("AUGMENTED REALITY<br>MOTOR");
                      $(".bottom-center-heading").html("AR experiences can now be launched directly from Safari as part of a new feature called AR Quick Look, allowing instant access for shoppers to better understand products in 3D and Augmented Reality. The possibility to go from a web-page to an AR experience with a tap is completely new."); 
                     break;
-            case 4:  
+            case 4:
+            case 5:   
                      $(".bottom-heading").html("BRING HOME EVEN <br> BEFORE YOU BUY IT");
                      $(".bottom-center-heading").html("AR experiences can now be launched directly from Safari as part of a new feature called AR Quick Look, allowing instant access for shoppers to better understand products in 3D and Augmented Reality. The possibility to go from a web-page to an AR experience with a tap is completely new."); 
                     break;
-            case 6:  
+            case 6:
+            case 7:   
                      $(".bottom-heading").html("OIL RIG TRAINING <br> IN VIRTUAL REALITY");
                      $(".bottom-center-heading").html("Creating a virtual replica of a rig is a lot cheaper than constantly ferrying students back and forth from one. Since VR technology has matured to the point where the virtual experience is as good as the real thing, students can walk away with a good grasp on their skills, albeit at a fraction of the cost."); 
                     break;

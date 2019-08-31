@@ -63,20 +63,20 @@
       </div>
       <br>
       <div class="row input-contents">	
-		    <div class="col-md-6 mx-auto border-line item-bottom">
+		    <div class="col-md-6 mx-auto item-bottom border-line">
           <div class="mb-3"></div>
 		      <form class="form-group" method="post" action="mail-function.php">
 		        <input type="text" id="name" class="form-control border-change" required>
 		        <label class="form-control-placeholder" for="name">Name</label>
 		    </div>
-		    <div class="col-md-6 mx-auto border-line item-bottom">
+		    <div class="col-md-6 mx-auto item-bottom border-line">
           <div class="mb-3"></div>
 		      <div class="form-group">
 		        <input type="email" id="email" class="form-control border-change" required>
 		        <label class="form-control-placeholder" for="email">Email</label>
 		      </div>
 		    </div>
-		    <div class="col-md-12 border-line manual-bottom item-content">
+		    <div class="col-md-12 manual-bottom item-content border-line">
           <div class="mb-3"></div>
 		      <div class="form-group">
 		        <input type="text" id="text" class="form-control border-change" required>
@@ -114,17 +114,17 @@ font-size: 0.6rem;border-radius: 20px;background-color: #F9535E;box-shadow: 0px 
       </p>
       <br>
       <h5 class="fheading" style="font-size: 1.05em;">KEEP IN TOUCH</h5>
-      <p class="mt-4 content-inside">Mail id</p>
+      <p class="mt-4 content-inside" style="font-size: 0.76rem !important;">Mail id</p>
         <p><b style="color: #666666;">contact@swevens.co</b>
       </p>
-      <p class="mt-4 content-inside">Call <br></p>
+      <p class="mt-4 content-inside" style="font-size: 0.76rem !important;">Call <br></p>
        <p> <b style="color: #666666;">+919444092103</b>
       </p>
       
       <div style="display: flex;opacity: .5;" class="footer-content">
       	<span class="ml-0"><a href="https://www.facebook.com/swevensindia" target="_blank"><i class="fa fa-facebook-square"></i></a></span>
-      	<span class="ml-3"><a href="https://medium.com/swevens" target="_blank"><i class="fa fa-medium"></i></a></span>
-      	<span class="ml-3"> <a href="https://in.linkedin.com/company/swevens" target="_blank"><i class="fa fa-linkedin-square"></i></a></span>
+      	<span class="ml-4"><a href="https://medium.com/swevens" target="_blank"><i class="fa fa-medium"></i></a></span>
+      	<span class="ml-4"> <a href="https://in.linkedin.com/company/swevens" target="_blank"><i class="fa fa-linkedin-square"></i></a></span>
       </div>
     </div>
   </div>
@@ -179,7 +179,6 @@ font-size: 0.6rem;border-radius: 20px;background-color: #F9535E;box-shadow: 0px 
 .content-inside
 {
   color: #666666;
-  opacity: .8;
   font-size: 0.86rem !important;
   font-family: seui;
 }
@@ -382,4 +381,13 @@ $( document ).ready(function() {
       
   }
   
+
+  
+ /* $(".form-control").focus(function()
+  {
+    $(this).addClass("border-line");    
+  }); */
+
+
+
 </script>
