@@ -5,11 +5,11 @@
         	
           $("#header-file").load("header.html");
           $("#footer-file").load("footer.html");
-
-          console.log("Hello world!"); 
-
-
        
-      });
 
-        
+
+        });
+
+
+
+	  
