@@ -44,7 +44,7 @@
       }
 
       .carousel-cell {
-        opacity: 0.2; 
+        opacity: 0.4; 
        
       }
 
@@ -101,6 +101,10 @@
         cursor: pointer;
       }
 
+      .main-container
+      {
+        position: relative;margin-top: 3vh;
+      }
 
       @media screen and (max-width: 767px)
 {
@@ -114,17 +118,31 @@
   }
   .carousel-cell img
   {
-    height: 35vh !important;
-    width: auto;
+    height: 45vh !important;
+    width: 85vw;
   }
 
   .carousel-cell.is-selected {
-     height: 35vh !important;
+     height: 45vh !important;
+     width: 85vw;
   }
   .carousal-left 
       {
+        /*margin-right:1.5rem !important;*/
         margin-left: 0rem !important;
       }
+
+     .c-bottom-center-heading
+      {
+        font-size: 0.8rem;
+      }
+
+        .main-container
+      {
+        position: relative;margin-top: 1vh !important;
+      }
+
+
 }
 
 @media screen and (min-width: 768px)
@@ -151,7 +169,7 @@
       </div>
 
 <div class="blur-content"> 
-       <div class="carousal-left container-fluid" style="position: relative;margin-top: 3vh;">
+       <div class="carousal-left container-fluid main-container" >
         <div class="carousel">
           <div class="carousel-cell"><img src="assets/2.png" ></div>
           <div class="carousel-cell"> <img src="assets/1.png" ></div>
@@ -192,14 +210,14 @@
 
 
   <!--- mobile content -->
-  <div class="container bottom-footer my-5 mob-content" >
+  <div class="container-fluid bottom-footer mt-3 mob-content" >
     <div class="row justify-contents-center">
       <div class="col-7">
-        <h5 class="c-bottom-heading"><span class="bottom-heading">IMMERSIVE EDUCATION</span></h5>
+        <h4 class="c-bottom-heading"><span class="bottom-heading">IMMERSIVE EDUCATION</span></h4>
       </div>
 
       <div class="col-5 d-flex ml-auto justify-content-end">
-        <h6 class="c-page-no" style="font-size: .7em;"><span class="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/08</span></h6>
+        <h6 class="c-page-no" style="font-size: .7rem;"><span class="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/08</span></h6>
       
         <div style="display: flex;padding-bottom:10px;">
           <span class="prev cnt">
@@ -215,19 +233,17 @@
       </div>
     </div>
 
+    </div> 
 
-
-    <div style="display: flex;opacity: .5;" class="justify-content-center my-5">
+        <div  class="justify-content-center manual-footer" style="margin-top: 2rem;">
         <span class="ml-0"><a href="https://www.facebook.com/swevensindia" target="_blank"><i class="fa fa-facebook-square"></i></a></span>
         <span class="ml-3"><a href="https://medium.com/swevens" target="_blank"><i class="fa fa-medium"></i></a></span>
         <span class="ml-3"> <a href="https://in.linkedin.com/company/swevens" target="_blank"><i class="fa fa-linkedin-square"></i></a></span>
       </div>
 
-    </div>
- 
-
 </div>
-
+     
+ 
 
   <script src="design/main.js"></script>
 
@@ -261,7 +277,7 @@
        var flick1 = $('.carousel').flickity({
         groupCells:false,
         fade:true,
-        cellAlign: 'center',
+        cellAlign: 'right',
         pageDots: false,
         wrapAround:true,
         percentPosition: true,
@@ -297,7 +313,7 @@
           {
             case 0: 
             case 1:  
-                     $(".bottom-heading").html("IMERSIVE<br>EDUCATION");
+                     $(".bottom-heading").html("IMMERSIVE<br>EDUCATION");
                      $(".bottom-center-heading").html("Future of education is in AR <br> Out of the box into the space");   
                     break;
             case 2:

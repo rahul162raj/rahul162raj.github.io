@@ -55,12 +55,12 @@
   
     .left-aside{
         grid-column: 1/2;
-        grid-row: 3/4;
+        grid-row: 3/5;
         margin-top: 100px;
     }
     .right-aside {
         grid-column: 3/4;
-        grid-row: 3/4;
+        grid-row: 2/5;
     }
     .footer {
         grid-column: 1/4;
@@ -111,5 +111,18 @@
   grid-gap: 0px;
 }
 
+.left-aside{
+        margin-left: 15px;
+    }
+
+    .right-aside {
+        margin-right: 15px;
+    }
+
+
+.headers .logo {
+  font-size: 22px !important;
+  padding: 15px 25px !important;
+}
 
 }

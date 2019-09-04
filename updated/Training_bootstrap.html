@@ -10,6 +10,8 @@
     <script type="text/javascript" src="js/resources/bootstrap.min.js"></script>
 
 
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
     <script src="design/main.js"></script>
     <link rel="stylesheet" href="design/navbar.css">
 
@@ -62,7 +64,9 @@
     margin-bottom: 3rem;
     /*border-color: #d43f3a;*/
 }
-.btn {
+
+.Register-btn
+{
     display: inline-block;
     margin-bottom: 0;
     font-weight: 400;
@@ -86,6 +90,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    justify-content: center;
 }
 
 /*.ml-manual
@@ -130,6 +135,11 @@
     display: none;
   }
 
+  .align-btn
+{
+  justify-content: center;
+ 
+}
 
 @media screen and (max-width: 767px)
 {
@@ -176,6 +186,44 @@
   .mob-content
   {
     display:block;
+  }
+  .Register-btn
+{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    padding: 1% 4%;
+    font-size: 12px;
+    line-height: 1.42857143;
+    border-radius: 50px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+  .align-btn
+  {
+    justify-content: left;
+    margin-left: 1.5rem;
+  }
+
+  .btn-block
+  {
+    width:100px !important;
   }
 }
 
@@ -249,17 +297,15 @@ function checkcourse(a)
 
 <div class="course-display"></div>
 
-
+  
 </div>
 
 
-<div class="mob-content container">
- <div style="display: flex;opacity: .5;" class="justify-content-center my-5">
+<div  class="justify-content-center manual-footer mob-content blur-content my-3"  style="display: none;">
         <span class="ml-0"><a href="https://www.facebook.com/swevensindia" target="_blank"><i class="fa fa-facebook-square"></i></a></span>
         <span class="ml-3"><a href="https://medium.com/swevens" target="_blank"><i class="fa fa-medium"></i></a></span>
         <span class="ml-3"> <a href="https://in.linkedin.com/company/swevens" target="_blank"><i class="fa fa-linkedin-square"></i></a></span>
       </div>
-</div>
 </div>
 <!-- <script type="text/javascript">
 

@@ -92,6 +92,7 @@ body
   padding: 25px 20px;
   position: relative;
   user-select: none;
+  margin-top: 0px !important
 }
 
 .headers .menu-icon .navicon {
@@ -242,14 +243,46 @@ html
 }
 
 
-
 .actives {
      box-shadow: 0 0 10px rgba(0,0,0,0.4);   
 }
 
+  a {
+        text-decoration: none;
+        color: #666;
+    }
 
+.manual-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18pt;
+    opacity: .5;
+}
 
+.manual-footer > span > a
+{
+     color: #000 !important;
+}
 
+#nav-footer {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18pt;
+    opacity: .5;
+}
+
+#nav-footer > a
+{
+     color: #000 !important;
+     padding: 3%;
+}
+
+.mob-content
+  {
+    display: none; 
+  }
 @media screen and (max-width: 767px) {
 .headers {
     margin-top: 0px;
@@ -259,7 +292,7 @@ html
  .headers li a 
  {
   padding: 20px 15px;
-  color: black;
+  color: #212020;
   font-size: 13pt;
   font-family: seui;
  }
@@ -269,27 +302,41 @@ html
     border-radius: 50px; 
     box-shadow: none !important;
     font-size: 13pt !important;
-    color: black !important;
+    color: #212020 !important;
   }
  .headers li a:hover
  {
   font-family: seui-b;
   font-size: 15pt !important;
  }
+ .contact-button:hover
+  {
+      color: black !important;
+  }
  .headers ul {
     text-align: center;
   }
  .headers .logo
   {
-    margin-left: 0px;
+     margin-left: 0px;
+    font-size: 18px !important;
+    padding: 15px 20px !important;
   }
     .bg-img
   {
     background-position: center;
   }
 
+  .mob-nav-item
+  {
+    position: absolute;
+    display: flex !important;
+    bottom: 40px;
+    justify-self: center;
+  }
 
-
-  
-
+  .mob-content
+  {
+    display: flex !important; 
+  }
 }

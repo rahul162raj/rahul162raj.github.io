@@ -13,9 +13,6 @@
           document.getElementById('header-file').innerHTML = 
                       loadPage('header.html');
 
-
-          /*document.getElementById('header-file').innerHTML = 
-                      loadPage('header_bootstrap.html');      */   
         });
 
         $(document).on("click", ".menu-btn", function() {
@@ -24,7 +21,7 @@
 
                     $('.headers').css("background-color", "transparent");
 
-                    var filterVal = 'blur(20px)';
+                    var filterVal = 'blur(40px)';
 
                     $('.blur-content')
                       .css('filter',filterVal)
@@ -33,15 +30,14 @@
                       .css('oFilter',filterVal)
                       .css('msFilter',filterVal);
 
-                    /*$('.bg-img')
-                      .css('filter',filterVal)
-                      .css('webkitFilter',filterVal)
-                      .css('mozFilter',filterVal)
-                      .css('oFilter',filterVal)
-                      .css('msFilter',filterVal);*/
 
-                    $('.blur-content').css('opacity', '.5');
-                    /*$('.bg-img').css('opacity', '.5');*/
+
+                   /* $('.blur-content').css('opacity', '.8');*/
+                
+
+                    $("#nav-footer").addClass("mob-nav-item");
+
+                    $('body').css('overflowY', 'hidden');
 
 
 
@@ -61,15 +57,16 @@
                       .css('oFilter',filterVal)
                       .css('msFilter',filterVal);
 
-                    /*$('.bg-img')
-                      .css('filter',filterVal)
-                      .css('webkitFilter',filterVal)
-                      .css('mozFilter',filterVal)
-                      .css('oFilter',filterVal)
-                      .css('msFilter',filterVal);*/
+       
 
-                      $('.blur-content').css('opacity', '1');
-                      /*$('.bg-img').css('opacity', '1');*/
+                      /*$('.blur-content').css('opacity', '1');*/
+
+
+                       $("#nav-footer").removeClass("mob-nav-item");
+                       
+
+                       $('body').css('overflowY', 'visible');
+
 
                 }
 

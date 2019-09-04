@@ -53,13 +53,13 @@
       </div> 
       <br>
       <div class="row text-center"> 
-        <div class="col-md-3" onclick="checkcontent(1);">
+        <div class="col-sm-3" onclick="checkcontent(1);">
           <div class="fheading border-box manual-bottom" id="content1" style="font-size: 0.8em;">AUGMENTED REALITY</div>
         </div>
-        <div class="col-md-3" onclick="checkcontent(2);">
+        <div class="col-sm-3" onclick="checkcontent(2);">
           <div class="fheading border-box manual-bottom" id="content2" style="font-size: 0.8em;">VIRTUAL REALITY</div>
         </div>
-        <div class="col-md-3" onclick="checkcontent(3);">
+        <div class="col-sm-3" onclick="checkcontent(3);">
           <div class="fheading border-box manual-bottom" id="content3" style="font-size: 0.8em;">MIXED REALITY</div>
         </div>
       </div>
@@ -85,7 +85,7 @@
 		        <label class="form-control-placeholder" for="text">Write your message here</label>
 		      </div>
 		    </div>
-		    <div class="col-md-2 ml-auto item-bottom">
+		    <div class="col-md-2 ml-auto item-bottom Send-btn">
 		       <div class="btn-group btn-group-sm btn-block">
   					<button type="button" class="btn btn-danger btn-block" style="font-family: fut;
 font-size: 0.6rem;border-radius: 20px;background-color: #F9535E;box-shadow: 0px 6px 15px -10px rgb(228,0,0);">Send</button>
@@ -186,6 +186,15 @@ font-size: 0.6rem;border-radius: 20px;background-color: #F9535E;box-shadow: 0px 
   font-size: 0.86rem !important;
   font-family: seui;
 }
+a {
+        text-decoration: none;
+        color: #666;
+    }
+a:hover {
+        text-decoration: none;
+        color: #666;
+    }
+
 
 label
 {
@@ -343,11 +352,24 @@ padding: 0px !important;
   .item-bottom
   {
     margin-bottom: 3rem;
+
   }
   .footer-content
   {
     margin-top: 3rem;
     margin-bottom: 1.5rem;
+  }
+
+  .item-content
+  {
+      margin-bottom: 2rem;
+      margin-top:0rem ;
+  }
+  .Send-btn
+  {
+    width: 100px;
+    margin-right: auto;   
+    margin-top: 2rem; 
   }
 } 
    .footer-content
@@ -355,6 +377,9 @@ padding: 0px !important;
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
   }
+
+  
+  
 
 </style>
 
