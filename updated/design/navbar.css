@@ -101,7 +101,7 @@ body
   height: 2px;
   position: relative;
   transition: background .2s ease-out;
-  width: 18px;
+  width: 20px;
 }
 
 .headers .menu-icon .navicon:before,
@@ -117,10 +117,14 @@ body
 
 .headers .menu-icon .navicon:before {
   top: 5px;
+  width: 13px;
+  left: 7px;
 }
 
 .headers .menu-icon .navicon:after {
   top: -5px;
+  width: 15px;
+  left: 5px;
 }
 
 /* menu btn */
@@ -137,7 +141,7 @@ body
 
 
 
-.headers .menu-btn:checked ~ .menu-icon .navicon {
+/*.headers .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
 
@@ -152,7 +156,7 @@ body
 .headers .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .headers .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
-}
+}*/
 
 /* 48em = 768px */
 
@@ -319,7 +323,7 @@ html
  .headers .logo
   {
      margin-left: 0px;
-    font-size: 19px !important;
+    font-size: 20px !important;
     padding: 15px 20px !important;
   }
     .bg-img
