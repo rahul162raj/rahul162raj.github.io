@@ -102,6 +102,7 @@ body
   position: relative;
   transition: background .2s ease-out;
   width: 20px;
+  border-radius: 30px;
 }
 
 .headers .menu-icon .navicon:before,
