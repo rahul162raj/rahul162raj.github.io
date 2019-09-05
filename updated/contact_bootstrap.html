@@ -49,17 +49,17 @@
       <br>
       <br>
       <div class="my-2"> 
-        <p style="color: #B7B7B7;font-size: .7rem;" class="theading">CHOOSE SERVICES YOU WISH TO AVAIL</p>
+        <p style="color: #B7B7B7;font-size: .8rem;" class="theading">CHOOSE SERVICES YOU WISH TO AVAIL</p>
       </div> 
       <br>
       <div class="row text-center"> 
-        <div class="col-sm-3" onclick="checkcontent(1);">
+        <div class="col-sm-3 mob-width" onclick="checkcontent(1);">
           <div class="fheading border-box manual-bottom" id="content1" style="font-size: 0.8em;">AUGMENTED REALITY</div>
         </div>
-        <div class="col-sm-3" onclick="checkcontent(2);">
+        <div class="col-sm-3 mob-width" onclick="checkcontent(2);">
           <div class="fheading border-box manual-bottom" id="content2" style="font-size: 0.8em;">VIRTUAL REALITY</div>
         </div>
-        <div class="col-sm-3" onclick="checkcontent(3);">
+        <div class="col-sm-3 mob-width" onclick="checkcontent(3);">
           <div class="fheading border-box manual-bottom" id="content3" style="font-size: 0.8em;">MIXED REALITY</div>
         </div>
       </div>
@@ -87,8 +87,7 @@
 		    </div>
 		    <div class="col-md-2 ml-auto item-bottom Send-btn">
 		       <div class="btn-group btn-group-sm btn-block">
-  					<button type="button" class="btn btn-danger btn-block" style="font-family: fut;
-font-size: 0.6rem;border-radius: 20px;background-color: #F9535E;box-shadow: 0px 6px 15px -10px rgb(228,0,0);">Send</button>
+  					<button id="details-button" type="button" class="btn btn-block send-btn-css">Send</button>
             
 			   </div> 
 		    </div>
@@ -160,11 +159,31 @@ font-size: 0.6rem;border-radius: 20px;background-color: #F9535E;box-shadow: 0px 
     margin-top: 3rem;
   }
 
+  #details-button:hover
+  {
+    color:white !important;
+  }
+
+  .send-btn-css
+  {
+    font-family: fut;
+    font-size: 0.6rem !important;
+    border-radius: 20px !important;
+    background-color: #F9535E;
+    box-shadow: 0px 6px 15px -10px rgb(228,0,0);
+    color: white;
+  }
+  .success-btn-css
+  {
+    font-family: fut;
+    font-size: 0.6rem !important;
+    border-radius: 20px !important;
+    background-color:  #06D876;
+    box-shadow: 0px 5px 0px -2px rgb(31,235,112,0.3);
+    color: white;
+  }
   .border-box:hover
   {
-   /* border:solid 3px #F9535E;
-    padding: 3%;
-    color: black;*/
     cursor: pointer;
   }
   .border-box
@@ -337,13 +356,19 @@ padding: 0px !important;
 }
 .border-box
   {
-    padding: 3% !important;
+    padding: 2% !important;
+  }
+
+  .mob-width
+  {
+    width: 200px;
   }
 
   .input-contents
   {
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
+    margin-left: 0 !important;
   }
   .write-content
   {
@@ -367,9 +392,10 @@ padding: 0px !important;
   }
   .Send-btn
   {
-    width: 100px;
+    width: 120px;
     margin-right: auto;   
     margin-top: 2rem; 
+    font-size: .8rem;
   }
 } 
    .footer-content

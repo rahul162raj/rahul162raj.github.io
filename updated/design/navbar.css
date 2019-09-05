@@ -265,7 +265,7 @@ html
 }
 
 #nav-footer {
-    width: 100px;
+    width: 110px;
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -319,7 +319,7 @@ html
  .headers .logo
   {
      margin-left: 0px;
-    font-size: 18px !important;
+    font-size: 19px !important;
     padding: 15px 20px !important;
   }
     .bg-img
