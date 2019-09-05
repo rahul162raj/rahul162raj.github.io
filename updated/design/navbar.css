@@ -98,11 +98,12 @@ body
 .headers .menu-icon .navicon {
   background: #333;
   display: block;
-  height: 2px;
   position: relative;
   transition: background .2s ease-out;
   width: 20px;
-  border-radius: 30px;
+  border-radius: 50px;
+    height: 3px;
+ 
 }
 
 .headers .menu-icon .navicon:before,
@@ -113,7 +114,9 @@ body
   height: 100%;
   position: absolute;
   transition: all .2s ease-out;
-  width: 100%;
+  width: 100%; 
+  border-radius: 50px;
+    height: 3px;
 }
 
 .headers .menu-icon .navicon:before {
