@@ -333,6 +333,8 @@ html
     .bg-img
   {
     background-position: center;
+    background-image: url("../assets/bgmob.png");
+
   }
 
   .mob-nav-item
