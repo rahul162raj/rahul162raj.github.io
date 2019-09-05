@@ -12,10 +12,15 @@
 
       <script type="text/javascript" src="js/resources/bootstrap.min.js"></script>
 
+
        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
       <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
       <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+      <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
+      <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
 
       <script src="design/main.js"></script>
       <link rel="stylesheet" href="design/navbar.css">
@@ -108,6 +113,8 @@
 
       @media screen and (max-width: 767px)
 {
+
+
   .pc-content
   {
     display: none; 
@@ -119,16 +126,38 @@
   .carousel-cell img
   {
     height: 45vh !important;
-    width: 85vw;
+    width: auto;
   }
 
   .carousel-cell.is-selected {
      height: 45vh !important;
-     width: 85vw;
+     width: auto;
   }
-  .carousal-left 
+
+  .carousel-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45vh !important;
+  width: auto;
+
+}
+
+  .carousel.is-fullscreen .carousel-cell {
+  height: 100% !important;
+}
+
+
+
+.carousel.is-fullscreen .carousel-cell-image {
+  max-width: 100% !important;
+}
+
+
+
+    .carousal-left 
       {
-        /*margin-right:1.5rem !important;*/
+          
         margin-left: 0rem !important;
       }
 
@@ -139,8 +168,9 @@
 
         .main-container
       {
-        position: relative;margin-top: 1vh !important;
+        position: relative;margin-top: 0vh !important;
       }
+
 
 
 }
@@ -157,7 +187,29 @@
   }
 }
 
+    @media screen and (max-width: 471px)
+{
 
+    .carousel-cell img
+  {
+    height: 35vh !important;
+    width: 100vw;
+  }
+
+  .carousel-cell.is-selected {
+     height: 35vh !important;
+     width: 100vw;
+  }
+
+  .carousel-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vh !important;
+  width: 100vw;
+
+}
+}
     </style>
 
   </head>
@@ -210,7 +262,7 @@
 
 
   <!--- mobile content -->
-  <div class="container-fluid bottom-footer mt-3 mob-content" style="height: auto;">
+  <div class="container bottom-footer mt-3 mob-content" style="height: auto;">
     <div class="row justify-contents-center" style="width: 100%;">
       <div class="col-7">
         <h4 class="c-bottom-heading"><span class="bottom-heading">IMMERSIVE EDUCATION</span></h4>
@@ -277,7 +329,7 @@
        var flick1 = $('.carousel').flickity({
         groupCells:false,
         fade:true,
-        cellAlign: 'right',
+        cellAlign: 'center',
         pageDots: false,
         wrapAround:true,
         percentPosition: true,
@@ -292,6 +344,11 @@
               }
             }
       });
+
+
+       $(".carousel-cell").dblclick(function(){
+          $('.carousel').flickity('toggleFullscreen');
+        }); 
     }
    
 
