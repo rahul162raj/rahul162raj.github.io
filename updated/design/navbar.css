@@ -100,7 +100,7 @@ body
   display: block;
   position: relative;
   transition: background .2s ease-out;
-  width: 20px;
+  width: 30px;
   border-radius: 50px;
     height: 3px;
  
@@ -121,14 +121,14 @@ body
 
 .headers .menu-icon .navicon:before {
   top: 5px;
-  width: 13px;
-  left: 7px;
+  width: 17px;
+  left: 13px;
 }
 
 .headers .menu-icon .navicon:after {
   top: -5px;
-  width: 15px;
-  left: 5px;
+  width: 20px;
+  left: 10px;
 }
 
 /* menu btn */
