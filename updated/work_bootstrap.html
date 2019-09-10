@@ -41,7 +41,7 @@
       .arrow
       {
         border: none;
-        background-color: white; 
+        background-color: transparent; 
       }
       body 
       {
@@ -175,6 +175,44 @@
 
 }
 
+
+    @media screen and (max-width: 471px)
+{
+
+    .carousel-cell img
+  {
+    height: 30vh !important;
+    width: 100vw;
+  }
+
+  .carousel-cell.is-selected {
+     height: 30vh !important;
+     width: 100vw;
+  }
+
+  .carousel-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh !important;
+  width: 100vw;
+}
+
+
+}
+
+@media screen and (max-width: 320px)
+   {
+      html
+      {
+        font-size: 0.7rem;
+      }
+      .width-container
+      {
+        width: auto;
+      }
+   }
+
 @media screen and (min-width: 768px)
 {
   .pc-content
@@ -185,32 +223,23 @@
   {
     display: none; 
   }
-}
 
-    @media screen and (max-width: 471px)
-{
-
-    .carousel-cell img
+  .width-container
   {
-    height: 35vh !important;
-    width: 100vw;
+    width: 100%;
   }
+}
 
-  .carousel-cell.is-selected {
-     height: 35vh !important;
-     width: 100vw;
+
+@media screen and (min-width: 471px)
+{
+     .width-container
+  {
+    width: 100%;
   }
-
-  .carousel-cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 35vh !important;
-  width: 100vw;
-
 }
-}
-    </style>
+
+       </style>
 
   </head>
   <body class="bg-img">
@@ -262,13 +291,13 @@
 
 
   <!--- mobile content -->
-  <div class="container bottom-footer mt-3 mob-content" style="height: auto;">
-    <div class="row justify-contents-center" style="width: 100%;">
-      <div class="col-7">
+  <div class="container bottom-footer mt-4 mob-content" style="height: auto;">
+    <div class="row justify-contents-center width-container">
+      <div class="col-8">
         <h4 class="c-bottom-heading"><span class="bottom-heading">IMMERSIVE EDUCATION</span></h4>
       </div>
 
-      <div class="col-5 d-flex ml-auto justify-content-end">
+      <div class="col-4 d-flex ml-auto justify-content-end">
         <h6 class="c-page-no" style="font-size: .7rem;"><span class="page-no">01</span><span style="font-weight: lighter;opacity: 0.6;">/08</span></h6>
       
         <div style="display: flex;padding-bottom:10px;">
@@ -287,7 +316,7 @@
 
     </div> 
 
-        <div  class="justify-content-center manual-footer my-5">
+        <div  class="justify-content-center manual-footer my-5 mob-content">
         <span class="ml-0"><a href="https://www.facebook.com/swevensindia" target="_blank"><i class="fa fa-facebook-square"></i></a></span>
         <span class="ml-3"><a href="https://medium.com/swevens" target="_blank"><i class="fa fa-medium"></i></a></span>
         <span class="ml-3"> <a href="https://in.linkedin.com/company/swevens" target="_blank"><i class="fa fa-linkedin-square"></i></a></span>
