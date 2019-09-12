@@ -145,23 +145,6 @@ body
 
 
 
-/*.headers .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.headers .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.headers .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.headers .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.headers .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}*/
-
 /* 48em = 768px */
 
 @media (min-width: 48em) {
