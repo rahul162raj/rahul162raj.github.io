@@ -74,12 +74,5 @@
 
 
 
-        $(document).on("click", "#details-button", function() 
-        {
+        
 
-          $(this).removeClass('send-btn-css');
-          $(this).addClass('success-btn-css');
-
-          $(this).html("<i class='fa fa-check' aria-hidden='true' style='font-size:14px;'></i>");
-
-        });
