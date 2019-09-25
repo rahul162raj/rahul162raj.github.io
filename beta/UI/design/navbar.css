@@ -1,0 +1,347 @@
+/**************burger menu ********************/
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+    font-family: fut;
+    src: url(../assets/futuraMediumBT.ttf);
+}
+@font-face {
+    font-family: wayward;
+    src: url(../assets/WaywardSans-Regular.otf);
+}
+@font-face {
+    font-family: seui;
+    src: url(../assets/SegoeUI.ttf);
+}
+
+@font-face {
+    font-family: seui-b;
+    src: url(../assets/SegoeUIBold.ttf);
+}
+
+*
+{
+  margin:0;
+}
+
+a {
+  color: #000;
+}
+
+body
+{
+   font-family:inherit;
+   line-height: normal !important;
+}
+.headers {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  padding-top: 30px;
+  background-color:white;
+}
+
+.headers ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden; 
+  font-family:fut;
+}
+
+.headers li a {
+  display: block;
+  padding: 4px 25px;
+  /*border-right: 1px solid #f4f4f4;*/
+  text-decoration: none;
+  color: #8B8B8B;
+  font-size: 12pt;
+}
+
+.headers li a:hover,
+.headers .menu-btn:hover {
+  color: black;
+}
+
+.headers .logo {
+  display: block;
+  float: left;
+  /*font-size: 1.8em;*/
+  font-size: 26px;
+  padding: 12px 25px;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+/* menu */
+
+.headers .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.headers .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 25px 20px;
+  position: relative;
+  user-select: none;
+  margin-top: 0px !important
+}
+
+.headers .menu-icon .navicon {
+  background: #333;
+  display: block;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 25px;
+  border-radius: 50px;
+    height: 2.5px;
+ 
+}
+
+.headers .menu-icon .navicon:before,
+.headers .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%; 
+  border-radius: 50px;
+    height: 2.5px;
+}
+
+.headers .menu-icon .navicon:before {
+  top: 6px;
+  width: 15px;
+  left: 10px;
+}
+
+.headers .menu-icon .navicon:after {
+  top: -6px;
+  width: 20px;
+  left: 5px;
+}
+
+/* menu btn */
+
+.headers .menu-btn {
+  display: none;
+}
+
+.headers .menu-btn:checked ~ .menu {
+  max-height: 100vh;
+  height: 100vh;
+  margin-top: 17vh !important;
+}
+
+
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .headers li {
+    float: left;
+  }
+  .headers ul {
+     margin-right: 50px;
+  }
+
+  .headers .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .headers .menu-icon {
+    display: none;
+  }
+}
+
+
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19;
+}
+
+.menu
+{
+  margin-top: 15px !important ;
+}
+
+.contact-button
+{
+  background-color: #06D876;
+  border-radius: 50px;
+  color: white !important;
+  font-size: 10pt !important;
+  box-shadow: 0px 5px 0px -2px rgb(31,235,112,0.3);
+  margin-left: 10px;
+}
+
+
+.menu
+{
+  font-family: 'fut';
+  font-weight: normal;
+}
+
+
+.logo {
+    font-family: wayward;
+    font-size: var(--text-logo);
+    font-weight: normal;
+    color: black;
+}
+
+.logo:hover {
+    color: black;
+}
+
+
+
+.bg-img
+{
+  background-image: url("../assets/bg.png");
+  height: 100%;
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: auto;
+  z-index: 0;
+}
+
+
+body,html
+{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
+
+html 
+{
+ font-size: 1rem; 
+}
+
+
+.actives {
+     box-shadow: 0 0 10px rgba(0,0,0,0.4);   
+}
+
+  a {
+        text-decoration: none;
+        color: #666;
+    }
+
+.manual-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18pt;
+    opacity: .5;
+}
+
+.manual-footer > span > a
+{
+     color: #000 !important;
+}
+
+#nav-footer {
+    width: 110px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18pt;
+    opacity: .5;
+}
+
+#nav-footer > a
+{
+     color: #000 !important;
+     padding: 3%;
+}
+
+.mob-content
+  {
+    display: none; 
+  }
+@media screen and (max-width: 767px) {
+.headers {
+    margin-top: 0px;
+    background-color: white;
+    padding-top: 5px;
+         }
+ .headers li a 
+ {
+  padding: 20px 15px;
+  color: #212020;
+  font-size: 13pt;
+  font-family: seui;
+ }
+ .contact-button
+  {
+    background-color: transparent !important;
+    border-radius: 50px; 
+    box-shadow: none !important;
+    font-size: 13pt !important;
+    color: #212020 !important;
+    margin-left: 0px;
+  }
+ .headers li a:hover
+ {
+  font-family: seui-b;
+  font-size: 15pt !important;
+ }
+ .contact-button:hover
+  {
+      color: black !important;
+  }
+ .headers ul {
+    text-align: center;
+  }
+ .headers .logo
+  {
+     margin-left: 0px;
+    font-size: 20px !important;
+    padding: 15px 20px !important;
+  }
+    .bg-img
+  {
+    background-position: center;
+    background-image: url("../assets/bgmob.png");
+
+  }
+
+  .mob-nav-item
+  {
+    position: absolute;
+    display: flex !important;
+    bottom: 40px;
+    justify-self: center;
+  }
+
+  .mob-content
+  {
+    display: flex !important; 
+  }
+}
+
+@media screen and (max-width: 220px)
+   {
+      .headers .logo {
+        margin-left: 0px;
+        font-size: 15px !important;
+        padding: 15px 20px !important;
+      }
+
+    }
