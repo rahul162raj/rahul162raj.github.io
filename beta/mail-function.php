@@ -15,7 +15,7 @@
 			
     		/*$selectedProjects = implode(', ', $_POST['kvcArray']);*/
 
-    		$selectedProjects = json_decode($_POST['json']);
+    		/*$selectedProjects = json_decode($_POST['json']);*/
 			
 
 			//user side		
@@ -38,10 +38,10 @@
 			$booking_mail1 .= '<div style="padding:10px;border:1px solid #ddd;margin-bottom:20px">';
 			$booking_mail1 .= '<h2 >Enquiry Details</h2>';
 			$booking_mail1 .= '<div style="font-size:22px;color:#646464">';
-			$booking_mail1 .= '<span style="display:block;padding-top:30px;"><b>Name &nbsp : &nbsp </b><span>'.$name.'</span></span>';
-			$booking_mail1 .= '<span style="display:block;padding-top:40px;"><b>Email &nbsp : &nbsp </b><span>'.$email.'</span></span>';
-			$booking_mail1 .= '<span style="display:block;padding-top:40px;"><b>Message &nbsp : &nbsp </b><span>'.$message.'</span></span>';
-			$booking_mail1 .= '<span style="display:block;padding-top:40px;"><b>services &nbsp : &nbsp </b><span>'.$selectedProjects.'</span></span>';
+			$booking_mail1 .= '<span style="display:block;padding-top:30px;"><b>Name &nbsp; : &nbsp; </b><span>'.$name.'</span></span>';
+			$booking_mail1 .= '<span style="display:block;padding-top:40px;"><b>Email &nbsp; : &nbsp; </b><span>'.$email.'</span></span>';
+			$booking_mail1 .= '<span style="display:block;padding-top:40px;"><b>Message &nbsp; : &nbsp; </b><span>'.$message.'</span></span>';
+			/*$booking_mail1 .= '<span style="display:block;padding-top:40px;"><b>services &nbsp; : &nbsp; </b><span>'.$selectedProjects.'</span></span>';*/
 			$booking_mail1 .= '</div>';
 			$booking_mail1 .= '<div style="margin-top:50px;margin-bottom:50px; margin-left:10px;display:flex;">
 			<img height="70px" width="70px" src="https://pbs.twimg.com/profile_images/1119049077310640128/jMkCdSAi_400x400.png"/>
@@ -93,16 +93,16 @@
 			$headers1 = "";		
 			$headers1  = 'MIME-Version: 1.0' . "\r\n";		
 			$headers1 .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";				
-			$headers1 .= "From: rahulrajcse07@gmail.com" . "\r\n";
+			$headers1 .= "From: contact@swevens.co" . "\r\n";
 	                if($email)
 	                {
-							if(mail('rahulrajcse07@gmail.com', $subject, $booking_mail1, $headers))
+							if(mail('contact@swevens.co', $subject, $booking_mail1, $headers))
 							{
 													
 								mail($email, $subject1, $msg, $headers1);	
 								$mailsent = 3;
 							
-							}			
+							}		
                      }
 	             
 	}

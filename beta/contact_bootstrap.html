@@ -455,7 +455,7 @@ padding: 0px !important;
       $.ajax({
           type: "POST",
           url: "mail-function.php",
-          data: {json : values},formdata,
+          data: formdata,
           success: function (data,status,xhr) 
           { 
             console.log(values);
@@ -463,10 +463,11 @@ padding: 0px !important;
           $('#details-button').removeClass('send-btn-css');
           $('#details-button').addClass('success-btn-css');
           $('#details-button').html("<i class='fa fa-check' aria-hidden='true' style='font-size:14px;'></i>");
+			  alert('Thanks for Registering... ');
           },
           error: function (jqXhr, textStatus, errorMessage) 
           { // error callback 
-            alert('the form is not valid, Try again later');
+            alert('Server connection timed out, Please try again later');
            }
        });
       return false;
