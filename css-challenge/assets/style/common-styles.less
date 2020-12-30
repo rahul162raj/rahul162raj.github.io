@@ -1,0 +1,28 @@
+@import "./shared-variable.less";
+
+
+@font-face {
+    font-family: fut;
+    src: url(../fonts/futuraMediumBT.ttf) format("opentype");
+}
+
+.absolute-center {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;	
+    margin: auto;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.day-container{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 8px;
+    height: @body-content-height;
+}
