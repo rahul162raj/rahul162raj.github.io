@@ -947,7 +947,7 @@ class AppComponent {
         this.router = router;
         this.location = location;
         this.collection = [];
-        this.endIndex = 100;
+        this.endIndex = 13;
         this.currentIndex = 1;
     }
     ngOnInit() {
