@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Oswald-regular";
+  src: url("/Assets/fonts/Oswald/Oswald-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Opensans-regular";
+  src: url("/Assets/fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 999;
+}
+
+.navbar .navbar-left {
+  padding-left: 24px;
+  font-family: "Oswald-regular";
+  font-size: 18pt;
+}
+
+.navbar-border {
+  -webkit-box-shadow: inset 0px -1px 0px #f3f3f4;
+  box-shadow: inset 0px -1px 0px #f3f3f4;
+}
+
+.container {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  top: 60px;
+}
+
+.container .header-section {
+  padding: 60px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+}
+
+.container .header-section .profile-image > img {
+  border-radius: 50%;
+  height: 160px;
+}
+
+.container .header-section .profile-description .discription-title {
+  font-family: "Oswald-regular";
+  font-size: 38pt;
+  line-height: 1.23;
+  padding: 14px 8px;
+  opacity: 0.95;
+}
+
+.container .header-section .profile-description .discription-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .header-section .profile-description .discription-content a {
+  margin: 14px 8px;
+  font-family: "Opensans-regular";
+  font-size: 16px;
+  text-decoration: underline;
+  margin-right: 18px;
+  color: #212121;
+  opacity: 0.95;
+}
+
+.container .project-section {
+  padding: 40px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .project-section .card {
+  padding: 14px 0px;
+}
+
+.container .project-section .card .card-img {
+  height: 260px;
+  width: 260px;
+}
+
+.container .project-section .card .card-footer {
+  height: 28px;
+  padding: 14px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .project-section .card .card-footer a {
+  font-family: "Opensans-regular";
+  font-size: 16px;
+  text-decoration: underline;
+  color: #212121;
+}
+
+.container .footer-section {
+  padding: 40px 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .container .header-section {
+    text-align: center;
+    padding: 60px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+  }
+  .container .header-section .profile-description .discription-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .project-section {
+    padding: 0px 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .project-section {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    gap: 24px !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
