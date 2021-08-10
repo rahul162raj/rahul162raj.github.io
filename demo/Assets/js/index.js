@@ -58,7 +58,7 @@ const cardItems = [
   },
     {
     id: 8,
-    img: "./Assets/images/jsbasics.png",
+    img: "./Assets/images/js-basics.png",
     imgAlt: "js-basics",
     demoUrl: "https://rahul162raj.github.io/404",
     sourceUrl: "",
