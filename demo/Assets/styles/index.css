@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Oswald-regular";
-  src: url("./Assets/fonts/Oswald/Oswald-Regular.ttf");
+  src: url("./../fonts/Oswald/Oswald-Regular.ttf");
 }
 
 @font-face {
   font-family: "Opensans-regular";
-  src: url("./Assets/fonts/Open_Sans/OpenSans-Regular.ttf");
+  src: url("./../fonts/Open_Sans/OpenSans-Regular.ttf");
 }
 
 body {
