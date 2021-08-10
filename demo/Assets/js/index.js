@@ -22,7 +22,7 @@ const cardItems = [
     demoUrl: "https://rahul162raj.github.io/pongal/",
     sourceUrl:
       "https://github.com/rahul162raj/rahul162raj.github.io/tree/master/pongal",
-    status:"WIP",
+    status:"PUBLIC",
   },
   {
     id: 4,
@@ -34,11 +34,35 @@ const cardItems = [
   },
   {
     id: 5,
+    img: "./Assets/images/web-openchain.png",
+    imgAlt: "web-openchain",
+    demoUrl: "https://certification.openchainproject.org/",
+    sourceUrl: "",
+    status:"PRIVATE",
+  },
+  {
+    id: 6,
     img: "./Assets/images/web-swevens.png",
     imgAlt: "web-swevens",
     demoUrl: "https://www.swevens.co/index.html",
-    sourceUrl: "https://github.com/rahul162raj/100-days-css-challenge",
+    sourceUrl: "",
     status:"PRIVATE",
+  },
+  {
+    id: 7,
+    img: "./Assets/images/react-quiz.png",
+    imgAlt: "react-quiz",
+    demoUrl: "https://xw40d.csb.app/",
+    sourceUrl: "",
+    status:"WIP",
+  },
+    {
+    id: 8,
+    img: "./Assets/images/js-basics.png",
+    imgAlt: "js-basics",
+    demoUrl: "https://rahul162raj.github.io/404",
+    sourceUrl: "",
+    status:"WIP",
   },
 ];
 
@@ -48,7 +72,7 @@ function checkStatus(item){
   } else if(item.status === "PRIVATE"){
     return `<span class="font-mr">&#128274;</span><span class="footer-text">Private</span>`
   } else{
-    return `<a href=${item.sourceUrl}  class="footer-text">View Source</a>`
+    return `<a href=${item.sourceUrl} target="_blank" class="footer-text">View Source</a>`
   }
 }
 
@@ -56,7 +80,7 @@ let cardElements = `${cardItems
   .map(
     (item) => `
     <div class="card">
-        <img src=${item.img} alt="${item.imgAlt}" class="card-img">
+        <a href=${item.demoUrl} target="_blank"><img  class="card-img" src=${item.img} alt="${item.imgAlt}"></a>
         <div class="card-footer">
             ${checkStatus(item)}
         </div>
