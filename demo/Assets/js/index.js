@@ -44,9 +44,9 @@ const cardItems = [
 
 function checkStatus(item){
   if(item.status === "WIP"){
-    return `<span class="font-mr">&#128679;</span><span class="footer-text">WIP</span>`
+    return `<span class="font-mr">&#9940;</span><span class="footer-text">WIP</span>`
   } else if(item.status === "PRIVATE"){
-    return `<span class="font-mr">&#128274;</span><span class="footer-text">PRIVATE</span>`
+    return `<span class="font-mr">&#128274;</span><span class="footer-text">Private</span>`
   } else{
     return `<a href=${item.sourceUrl}  class="footer-text">View Source</a>`
   }
